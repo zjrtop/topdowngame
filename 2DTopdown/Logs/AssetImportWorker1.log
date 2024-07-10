@@ -1,0 +1,345 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.39f1c1 (da41b8c78001) revision 14303672'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'zh' Physical Memory: 65277 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\enginee\unity\2021.3.39f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/code/zjr/topdowngame/2DTopdown
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49566
+Successfully changed project path to: D:/code/zjr/topdowngame/2DTopdown
+D:/code/zjr/topdowngame/2DTopdown
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [24972] Host "[IP] 172.16.5.99 [Port] 0 [Flags] 2 [Guid] 2119532689 [EditorId] 2119532689 [Version] 1048832 [Id] WindowsEditor(7,WINDOWS-RL0H6ND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [24972] Host "[IP] 172.16.5.99 [Port] 0 [Flags] 2 [Guid] 2119532689 [EditorId] 2119532689 [Version] 1048832 [Id] WindowsEditor(7,WINDOWS-RL0H6ND) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 51.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.39f1c1 (da41b8c78001)
+[Subsystems] Discovering subsystems at path C:/enginee/unity/2021.3.39f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/code/zjr/topdowngame/2DTopdown/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 (ID=0x2786)
+    Vendor:   NVIDIA
+    VRAM:     12012 MB
+    Driver:   32.0.15.5612
+Initialize mono
+Mono path[0] = 'C:/enginee/unity/2021.3.39f1c1/Editor/Data/Managed'
+Mono path[1] = 'C:/enginee/unity/2021.3.39f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/enginee/unity/2021.3.39f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/enginee/unity/2021.3.39f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/enginee/unity/2021.3.39f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002480 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 202 ms
+Refreshing native plugins compatible for Editor in 43.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.642 seconds
+Domain Reload Profiling:
+	ReloadAssembly (642ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (503ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (70ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (390ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (263ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (56ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005130 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 43.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1030ms)
+		BeginReloadAssembly (73ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (10ms)
+		EndReloadAssembly (897ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (162ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (621ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (488ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3850 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (46.4 KB). Loaded Objects now: 4310.
+Memory consumption went from 150.1 MB to 150.0 MB.
+Total: 2.193200 ms (FindLiveObjects: 0.166000 ms CreateObjectMapping: 0.046600 ms MarkObjects: 1.929600 ms  DeleteObjects: 0.050400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 125660.249380 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f9108bab69b76fb8a7939c19af6fae') in 0.004399 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/generic_char_v0.2/guide.png
+  artifactKey: Guid(b9285eed309fcde4bb191f8ae6207545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/generic_char_v0.2/guide.png using Guid(b9285eed309fcde4bb191f8ae6207545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3853be16a89905d552ba0d2f6ff3f359') in 0.082256 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1016.002666 seconds.
+  path: Assets/Knight_player/Attack_KG_2.png
+  artifactKey: Guid(747b26018961eaf44b097b7af3f775ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Attack_KG_2.png using Guid(747b26018961eaf44b097b7af3f775ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '390806ca1d1a2922351b91de27d7b073') in 0.010198 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002150 seconds.
+  path: Assets/Knight_player/Attack_KG_4.png
+  artifactKey: Guid(63ab5d78c252aa24a805d713bf32ef66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Attack_KG_4.png using Guid(63ab5d78c252aa24a805d713bf32ef66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09b2c2f8a6673db1b6fda4ef0190fcb') in 0.007699 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003822 seconds.
+  path: Assets/Knight_player/Crouching_Idle_KG_2.png
+  artifactKey: Guid(dac2e68af3b00a245a947a9c9f4bb534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Crouching_Idle_KG_2.png using Guid(dac2e68af3b00a245a947a9c9f4bb534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd931e191d45d0589cfdd3529de652a') in 0.007507 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006020 seconds.
+  path: Assets/Knight_player/Dying_KG_1.png
+  artifactKey: Guid(051796206ddc8244f89e9cc0aeb1461a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Dying_KG_1.png using Guid(051796206ddc8244f89e9cc0aeb1461a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4083954f2d9a5aeb26ccaa9b6cb1c17') in 0.006916 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Knight_player/knight_win.png
+  artifactKey: Guid(856f83239aa5bb949994fa359c64fc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/knight_win.png using Guid(856f83239aa5bb949994fa359c64fc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca3f3680a94676827c55bb44967aba82') in 0.006544 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Knight_player/Hurt_KG_2.png
+  artifactKey: Guid(d6fba66d15ed75d438ebe3d4ac7cb5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Hurt_KG_2.png using Guid(d6fba66d15ed75d438ebe3d4ac7cb5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b158da9a092e1d0f5c8c97233d504975') in 0.010042 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Knight_player/Pushing_KG_1.png
+  artifactKey: Guid(e05a085e2e240374f9c15b2bc20775c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Pushing_KG_1.png using Guid(e05a085e2e240374f9c15b2bc20775c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85420c17cae8ce5196236eb13a63e64') in 0.005345 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Knight_player/Fall_KG_2.gif
+  artifactKey: Guid(520cfeccffda02f48806b4fefcb190a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Fall_KG_2.gif using Guid(520cfeccffda02f48806b4fefcb190a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8032f97847d471d5c32cc857cb244d86') in 0.008108 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Knight_player/Jump_KG_1.png
+  artifactKey: Guid(8eb0fbe0e40bb77489b1787c960b19d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Jump_KG_1.png using Guid(8eb0fbe0e40bb77489b1787c960b19d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e07dd0ab55f4d56239cb4eedcf351f') in 0.005600 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Knight_player/Attack_KG_3.png
+  artifactKey: Guid(2d4b6fd3605f80140a5d9ee693b3dff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Attack_KG_3.png using Guid(2d4b6fd3605f80140a5d9ee693b3dff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '373db364d84d7db473972b1277613f24') in 0.008176 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Knight_player/Jump_KG_2.gif
+  artifactKey: Guid(556d89c5dc548694989ab523110e2da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Jump_KG_2.gif using Guid(556d89c5dc548694989ab523110e2da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f8e67a74b58646190997b16ab77a14') in 0.008009 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Knight_player/ladders_KG_1.png
+  artifactKey: Guid(ba987b031f86a1e459143e46bf68d6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/ladders_KG_1.png using Guid(ba987b031f86a1e459143e46bf68d6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbdb38fd19248397c8d54cd151b3fd1') in 0.005567 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Knight_player/Grab_idle_KG_1.png
+  artifactKey: Guid(782a176471697ea43bfc18106f279bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Grab_idle_KG_1.png using Guid(782a176471697ea43bfc18106f279bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7d9b8b347a0175e20a5f87944b6e08') in 0.011089 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Knight_player/Dying_KG_2.png
+  artifactKey: Guid(92f651995463df34485596b259e04d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Dying_KG_2.png using Guid(92f651995463df34485596b259e04d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ec58fdbbb207448450c796a2556539') in 0.007535 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Knight_player/Idle_KG_1.png
+  artifactKey: Guid(f6e22931b6c6b20498987712c86d9882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Idle_KG_1.png using Guid(f6e22931b6c6b20498987712c86d9882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d28a8bba4485f740143d8e6e25a9dfc') in 0.007049 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Knight_player/Power_Up_KG_1.png
+  artifactKey: Guid(431d6fcb9a44d36439b2d18d272d0476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Power_Up_KG_1.png using Guid(431d6fcb9a44d36439b2d18d272d0476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8a55ef88f80838b31dbdbf0c2a7ce5') in 0.010373 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Knight_player/Drinking_KG_1.png
+  artifactKey: Guid(682296034d528f54b97bd46e55cded59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Drinking_KG_1.png using Guid(682296034d528f54b97bd46e55cded59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cd1dfaeed5b7914d6d7a265c49c7d0') in 0.009449 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Knight_player/Ledge_Grab_KG_1.png
+  artifactKey: Guid(c26a654f846e6eb479ad234e203f7967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Ledge_Grab_KG_1.png using Guid(c26a654f846e6eb479ad234e203f7967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6c347dde5e8fbb6ebfd185393925bb') in 0.007069 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Knight_player/Crouching_KG_2.png
+  artifactKey: Guid(bf687f8c9c0a88a4ab2444aff539870a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Knight_player/Crouching_KG_2.png using Guid(bf687f8c9c0a88a4ab2444aff539870a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb6a80c25e6263fcab5526eafc55a4a') in 0.006602 seconds 
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

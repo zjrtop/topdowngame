@@ -5,11 +5,19 @@ using UnityEngine;
 public class MovationTouch : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float moveSpeed = 05f;
+    public float moveSpeed = 0.001f;
+
     public JoyContainer jsMovement;
 
+    private float sumVelocity;
     private Vector3 direction;
     private float xMin, xMax, yMin, yMax;
+
+
+    public float GetVelocity()
+    {
+        return sumVelocity;
+    }
 
     void Start()
     {
@@ -24,6 +32,8 @@ public class MovationTouch : MonoBehaviour
     void Update()
     {
         direction = jsMovement.InputDirection; //InputDirection can be used as per the need of your project
+
+        sumVelocity = (direction * moveSpeed).magnitude;
 
         if (direction.magnitude != 0)
         {
