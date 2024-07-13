@@ -11,7 +11,7 @@ public class MovationTouch : MonoBehaviour
 
     private float sumVelocity;
     private Vector3 direction;
-    private float xMin, xMax, yMin, yMax;
+    //private float xMin, xMax, yMin, yMax;
 
 
     public float GetVelocity()
@@ -22,10 +22,10 @@ public class MovationTouch : MonoBehaviour
     void Start()
     {
         //Initialization of boundaries
-        xMax = 15 - 8; // I used 50 because the size of player is 100*100
-        xMin = 0;
-        yMax = 15 - 8;
-        yMin = 0;
+        //xMax = 15 - 8; // I used 50 because the size of player is 100*100
+        //xMin = 0;
+        //yMax = 15 - 8;
+        //yMin = 0;
     }
 
     // Update is called once per frame
