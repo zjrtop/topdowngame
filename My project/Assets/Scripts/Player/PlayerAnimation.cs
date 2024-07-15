@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+    private string attackAnim = "PlayerAttack";
     private Animator anim;
     private MovationTouch movation;
     // Start is called before the first frame update
@@ -17,4 +18,13 @@ public class PlayerAnimation : MonoBehaviour
     {
         anim.SetFloat("velocity", movation.GetVelocity());
     }
+
+    public void PlayAttack()
+    {
+        if (attackAnim.Length != 0)
+        {
+            anim.Play(attackAnim, 0, 1.0f);
+        }
+    }
+
 }
