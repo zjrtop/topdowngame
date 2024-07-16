@@ -1,0 +1,1458 @@
+Using pre-set license
+Built from '2022.3/china_unity/release' branch; Version is '2022.3.34f1c1 (1e17368ca73f) revision 1972022'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32688 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\2022.3.34f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Yihua/Downloads/topdowngame-main/topdowngame-main/My project
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+57211
+Successfully changed project path to: C:/Users/Yihua/Downloads/topdowngame-main/topdowngame-main/My project
+C:/Users/Yihua/Downloads/topdowngame-main/topdowngame-main/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [14580] Host "[IP] 192.168.31.33 [Port] 0 [Flags] 2 [Guid] 2229799198 [EditorId] 2229799198 [Version] 1048832 [Id] WindowsEditor(7,Anthony) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [14580] Host "[IP] 192.168.31.33 [Port] 0 [Flags] 2 [Guid] 2229799198 [EditorId] 2229799198 [Version] 1048832 [Id] WindowsEditor(7,Anthony) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+Refreshing native plugins compatible for Editor in 24.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.34f1c1 (1e17368ca73f)
+[Subsystems] Discovering subsystems at path D:/2022.3.34f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Yihua/Downloads/topdowngame-main/topdowngame-main/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2216)
+    Vendor:   NVIDIA
+    VRAM:     10053 MB
+    Driver:   32.0.15.5612
+Initialize mono
+Mono path[0] = 'D:/2022.3.34f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/2022.3.34f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/2022.3.34f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/2022.3.34f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/2022.3.34f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005306 seconds.
+- Loaded All Assemblies, in  0.341 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.256 seconds
+Domain Reload Profiling: 596ms
+	BeginReloadAssembly (100ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (98ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (128ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (257ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (201ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (141ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.610 seconds
+Refreshing native plugins compatible for Editor in 10.40 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.752 seconds
+Domain Reload Profiling: 1357ms
+	BeginReloadAssembly (135ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (384ms)
+		LoadAssemblies (277ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (175ms)
+			TypeCache.Refresh (144ms)
+				TypeCache.ScanAssembly (128ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (753ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (594ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (470ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 12.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4336 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (68.0 KB). Loaded Objects now: 4785.
+Memory consumption went from 152.0 MB to 151.9 MB.
+Total: 4.265200 ms (FindLiveObjects: 0.348200 ms CreateObjectMapping: 0.332400 ms MarkObjects: 3.439900 ms  DeleteObjects: 0.143800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 173841.894772 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt12a.asset
+  artifactKey: Guid(19a6a6877f7e2944daff6ea65d679c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt12a.asset using Guid(19a6a6877f7e2944daff6ea65d679c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a5489266d74f810baf2c69e652c80d2c') in 0.078506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeGrass4b.asset
+  artifactKey: Guid(f8bf5f6f1f9e1fd49b771585ff838514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeGrass4b.asset using Guid(f8bf5f6f1f9e1fd49b771585ff838514) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3d97a079d976cf4aac3201fce05b2479') in 0.009626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.395960 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Path1.asset
+  artifactKey: Guid(827b99a808eadf64fa0a6d17ff95a906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Path1.asset using Guid(827b99a808eadf64fa0a6d17ff95a906) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '26c57f7450e8e64efca59a598efe7273') in 0.009311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003048 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Path5.asset
+  artifactKey: Guid(32dab32d5e247794580d8b785ffb5c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Path5.asset using Guid(32dab32d5e247794580d8b785ffb5c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4a2f0c10eb64b7b866db2c72b2668fc1') in 0.009529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.016237 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Path6.asset
+  artifactKey: Guid(a92c834f3bc5d8b4e9cec0dae9b12d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Path6.asset using Guid(a92c834f3bc5d8b4e9cec0dae9b12d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cbb80f20c412d7fd29dea947f7fe6f38') in 0.008897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Path9.asset
+  artifactKey: Guid(827c1142a58b8c4459b62def530ee252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Path9.asset using Guid(827c1142a58b8c4459b62def530ee252) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '809f3cad4ea0fcf4762266e7b9322eb3') in 0.009513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000907 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Path12.asset
+  artifactKey: Guid(3e2b5186fb8ad5542a04933aad16784d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Path12.asset using Guid(3e2b5186fb8ad5542a04933aad16784d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3fd3a15eb7eaa96099473e749f26eae7') in 0.009813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Path15.asset
+  artifactKey: Guid(c74279bf063bb9e4289337673bf631d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Path15.asset using Guid(c74279bf063bb9e4289337673bf631d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'df9315809988070f24164b644ccab6ae') in 0.009314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 58.468572 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Tiles.png
+  artifactKey: Guid(49ebf7de40457d84495983a6734b2c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Tiles.png using Guid(49ebf7de40457d84495983a6734b2c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '78beca423bd48945cc9603aa9ffd56fa') in 0.369028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 362
+========================================================================
+Received Import Request.
+  Time since last request: 272.784331 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt3b.asset
+  artifactKey: Guid(053d1965da46f7a4ba474561ed3e9d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt3b.asset using Guid(053d1965da46f7a4ba474561ed3e9d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0219c3c360668a39165644aa4524e265') in 0.009989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt5a.asset
+  artifactKey: Guid(687605a84f654fa4a9ecaf7ab7cd9259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt5a.asset using Guid(687605a84f654fa4a9ecaf7ab7cd9259) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd7472b30030c04f6b919ed872afd9c08') in 0.004294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003570 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt5b.asset
+  artifactKey: Guid(ead8a166d6e59e54eb6026ae47e8128f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt5b.asset using Guid(ead8a166d6e59e54eb6026ae47e8128f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a7e384e81a60f7d653a1fba9cef34fd6') in 0.005552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt6b.asset
+  artifactKey: Guid(7669f37199a6e1446802588aa109ee23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt6b.asset using Guid(7669f37199a6e1446802588aa109ee23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8093891c06c44d0ff5e827390cf2524d') in 0.008696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003421 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt7b.asset
+  artifactKey: Guid(1e9f12111d318f44f96af55e1d9ace24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt7b.asset using Guid(1e9f12111d318f44f96af55e1d9ace24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '403a8c2c8341f178bec252a1ee362c83') in 0.009364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt8a.asset
+  artifactKey: Guid(1bc5f44fde0386e4d81e381bf06a74ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt8a.asset using Guid(1bc5f44fde0386e4d81e381bf06a74ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b22983f670c0f3724adf5d75a7c410f8') in 0.008762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt9b.asset
+  artifactKey: Guid(7c6de05a528a692418e63d51bf731add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt9b.asset using Guid(7c6de05a528a692418e63d51bf731add) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '026091c7229ee0fa98a75f64e56a7ef6') in 0.009959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt10b.asset
+  artifactKey: Guid(12411e28dd66ad244882b8b3bfc5f673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt10b.asset using Guid(12411e28dd66ad244882b8b3bfc5f673) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a9a3d2a4818962170ead8babe6cad45f') in 0.009164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt9a.asset
+  artifactKey: Guid(bfb0772a768e77a498006df38c8da287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt9a.asset using Guid(bfb0772a768e77a498006df38c8da287) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '18be2cfdf4d23b9f678016d78da6cb84') in 0.010342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt6a.asset
+  artifactKey: Guid(35ab8a413374648468b15ce2a3393864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt6a.asset using Guid(35ab8a413374648468b15ce2a3393864) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8a71f3c11ce8abb6973ca938c13e6211') in 0.008752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt7a.asset
+  artifactKey: Guid(82178bc88ece0de4e93176c82a086573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt7a.asset using Guid(82178bc88ece0de4e93176c82a086573) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'dcf718601ec48f42f1b802e8e561f644') in 0.007853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt1a.asset
+  artifactKey: Guid(99f12e8cb6500e94b8be498fe2d78387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt1a.asset using Guid(99f12e8cb6500e94b8be498fe2d78387) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '094d07a8fd910af865bae16fba483017') in 0.007702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt1b.asset
+  artifactKey: Guid(9f395243e6fdadf4396aa621c00f7861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt1b.asset using Guid(9f395243e6fdadf4396aa621c00f7861) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bf272ebeba02ea841f499ffcd5ce2ca8') in 0.008360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt3a.asset
+  artifactKey: Guid(8723943dbbcc71a4cb544fb6dceeb19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt3a.asset using Guid(8723943dbbcc71a4cb544fb6dceeb19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '080e994214e5e6c749b1eb7c56a096cc') in 0.008350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt8b.asset
+  artifactKey: Guid(f94e4e8d7ab1cdb4d90311cdf1ee127c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/LakeDirt8b.asset using Guid(f94e4e8d7ab1cdb4d90311cdf1ee127c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bd24eb35f15d11636333a1720a35e346') in 0.008611 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.248264 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_534.asset
+  artifactKey: Guid(3e237aa501f343d479bf27ecd09d81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_534.asset using Guid(3e237aa501f343d479bf27ecd09d81af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '712f46d600c854db2a52269c2b5e3748') in 0.006190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000798 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_535.asset
+  artifactKey: Guid(647dee0c441457b42b362902e646af09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_535.asset using Guid(647dee0c441457b42b362902e646af09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6fb85ce4cfef6d8b98c15e15281d8eed') in 0.005801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001503 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_536.asset
+  artifactKey: Guid(602667f58d67e8d40b9047fb300686fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_536.asset using Guid(602667f58d67e8d40b9047fb300686fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '87656b38b958f72d46d2ed8f7cfcdb64') in 0.006028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001218 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_537.asset
+  artifactKey: Guid(9d8179303757507439c3f5fe7c72bcf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_537.asset using Guid(9d8179303757507439c3f5fe7c72bcf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f66e521f095bc57610f8d54f9b0eabc8') in 0.008270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_538.asset
+  artifactKey: Guid(94c08b535391a5d4c860566b817d1a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_538.asset using Guid(94c08b535391a5d4c860566b817d1a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ef9ad78345850e97089d15a143dfbfcf') in 0.006245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001115 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_539.asset
+  artifactKey: Guid(aa7cd9f813a765c46b6fd1772814bb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_539.asset using Guid(aa7cd9f813a765c46b6fd1772814bb15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '68dc943f980709bdc442a53efb607534') in 0.006465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001071 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_540.asset
+  artifactKey: Guid(3acfdc5c4d6ec1b4c823a854d24fba48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_540.asset using Guid(3acfdc5c4d6ec1b4c823a854d24fba48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '11a1fb72152d3a0fdf88c7827ff801e4') in 0.005924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001697 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_541.asset
+  artifactKey: Guid(ed0e8b5ebe73a214280617a9f5535d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_541.asset using Guid(ed0e8b5ebe73a214280617a9f5535d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2904cf606232327ac74a24dadbc0a7af') in 0.006995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000966 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_542.asset
+  artifactKey: Guid(bba065a7644485243800b04b2fbb4891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_542.asset using Guid(bba065a7644485243800b04b2fbb4891) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6ecbf38eac18723c4b260a0dc00d33bb') in 0.006743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000939 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_543.asset
+  artifactKey: Guid(a7e3fc4c34f9df64ba4cfb15f3e1c250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_543.asset using Guid(a7e3fc4c34f9df64ba4cfb15f3e1c250) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8bcbc91db03598106288165b23b5a547') in 0.006641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.027157 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_517.asset
+  artifactKey: Guid(16f6e403c41061348b3b71bf456ca7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_517.asset using Guid(16f6e403c41061348b3b71bf456ca7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3405fd3b6218a3e50d662421a0f1fea0') in 0.006272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001269 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_518.asset
+  artifactKey: Guid(32606a6a85f2e034d96dc85dfec01311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_518.asset using Guid(32606a6a85f2e034d96dc85dfec01311) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f608b461ecba86f4bad58fb68abdccf3') in 0.006465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001225 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_519.asset
+  artifactKey: Guid(59a80e2bbb85dbe4994138b4be80c17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_519.asset using Guid(59a80e2bbb85dbe4994138b4be80c17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bde8a8ad3c89a4e01523542039326931') in 0.006152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001055 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_520.asset
+  artifactKey: Guid(c82b775999301644ea646d0bf2036da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_520.asset using Guid(c82b775999301644ea646d0bf2036da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6bb2e87ab62389c218125402902a44b8') in 0.005614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001568 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_521.asset
+  artifactKey: Guid(e4ed2111b8c82ac43898d2ec96403ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_521.asset using Guid(e4ed2111b8c82ac43898d2ec96403ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9c092612ca4905fc6ce25010d9315632') in 0.005633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001605 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_522.asset
+  artifactKey: Guid(6cbd9a60a0a16c544bef8607c8350621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_522.asset using Guid(6cbd9a60a0a16c544bef8607c8350621) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '8fad2211c3a6a9d35166708f43a48a9e') in 0.005442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001698 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_523.asset
+  artifactKey: Guid(f43477ed84926154fa944305f28b7f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_523.asset using Guid(f43477ed84926154fa944305f28b7f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '07f137ce3621babef95b4e91ec3c703f') in 0.005582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001462 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_524.asset
+  artifactKey: Guid(1b1ae11c3d7897a44b5c10164ae0a483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_524.asset using Guid(1b1ae11c3d7897a44b5c10164ae0a483) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '51c796f8ff8874d7dc34a1cc3a097969') in 0.005398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001705 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_525.asset
+  artifactKey: Guid(ee92eeaee5b4edb46883468fe6a94bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_525.asset using Guid(ee92eeaee5b4edb46883468fe6a94bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ab3b8a2e549d4eb9873dda6488c47940') in 0.005636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001604 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_526.asset
+  artifactKey: Guid(78cca1cbb92962e4d9d90fc5c9c9a2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_526.asset using Guid(78cca1cbb92962e4d9d90fc5c9c9a2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3218af5af244e7e07b5520c48e09704b') in 0.005939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001564 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_527.asset
+  artifactKey: Guid(da7f3fd0bab277749beca6c258921dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_527.asset using Guid(da7f3fd0bab277749beca6c258921dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '92d01d1c28af346860f6a18017647f42') in 0.005733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001455 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_528.asset
+  artifactKey: Guid(b1e60a642302f3641952a78c55f8a4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_528.asset using Guid(b1e60a642302f3641952a78c55f8a4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3ec8131cdff050ce2ddda5ebba7bcd53') in 0.005578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001546 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_529.asset
+  artifactKey: Guid(f02d4dfceecdb4c409b45cd240f5bcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_529.asset using Guid(f02d4dfceecdb4c409b45cd240f5bcaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cdba2fa732b09a3d5809353a9697a6b3') in 0.005557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001673 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_530.asset
+  artifactKey: Guid(b792688f0f4402a449b0dc654fb614a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_530.asset using Guid(b792688f0f4402a449b0dc654fb614a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'eb089730d3bce17018a81a943f18a8e2') in 0.005516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001625 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_531.asset
+  artifactKey: Guid(e735d45a7e5ca5b4482b79095a927efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_531.asset using Guid(e735d45a7e5ca5b4482b79095a927efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2d487d09c1738076c920c26699cb90e4') in 0.005838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001495 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_532.asset
+  artifactKey: Guid(44a2f8d4d4ec0064598d5d8d33fed8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_532.asset using Guid(44a2f8d4d4ec0064598d5d8d33fed8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '450e63c77e1e2aa81e9a5cc1d3cf3ed6') in 0.005492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001675 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_533.asset
+  artifactKey: Guid(9b14083d48aa1274f8ebd9a4f70d357c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_533.asset using Guid(9b14083d48aa1274f8ebd9a4f70d357c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd4100153ab2b45840ff8a5cd164c281b') in 0.005919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.113537 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_500.asset
+  artifactKey: Guid(778b8c2883bf8574199278ebd2cb6a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_500.asset using Guid(778b8c2883bf8574199278ebd2cb6a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '30c38bcab9b16a641661ec1a8c93c100') in 0.006208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000908 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_501.asset
+  artifactKey: Guid(7b0367e37bc381340a0874957e40cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_501.asset using Guid(7b0367e37bc381340a0874957e40cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd9074216f32fa84a55b620415c45377b') in 0.006138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001272 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_502.asset
+  artifactKey: Guid(7bc2a841f9449b24c81c0ab5541dc4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_502.asset using Guid(7bc2a841f9449b24c81c0ab5541dc4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0e8e3d04e9da690a587be64c979e126a') in 0.005753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001210 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_503.asset
+  artifactKey: Guid(afcdb2e04f408ba46b61b29f864c8dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_503.asset using Guid(afcdb2e04f408ba46b61b29f864c8dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b1b975f403f85261dcf5dd4ca073ecb6') in 0.005779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001425 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_504.asset
+  artifactKey: Guid(36015f47cc1c5ee4ab2c4354cfca6787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_504.asset using Guid(36015f47cc1c5ee4ab2c4354cfca6787) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '37e9ffd6883a3a1be8a22ea1aaa9711c') in 0.005722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001225 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_505.asset
+  artifactKey: Guid(14bb882414342194b90254b25db27ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_505.asset using Guid(14bb882414342194b90254b25db27ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '413beb1159c61ddfa60c67e28f6f6494') in 0.005803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001239 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_506.asset
+  artifactKey: Guid(c3e4e1c73c6a97747ad1b5815f6007da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_506.asset using Guid(c3e4e1c73c6a97747ad1b5815f6007da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '938dd1a9d76afb4c30789711b77ac354') in 0.005770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001303 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_507.asset
+  artifactKey: Guid(e229d95abadd63240ac4655a00830a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_507.asset using Guid(e229d95abadd63240ac4655a00830a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'eacf406ebc79d90d4e26176b8aa995f4') in 0.005761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001438 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_508.asset
+  artifactKey: Guid(88d589919a501b54d8e615a44b5d95a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_508.asset using Guid(88d589919a501b54d8e615a44b5d95a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e1df246a6b0b8579d8441edc1fedb0ad') in 0.005662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001483 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_509.asset
+  artifactKey: Guid(adde032ea8f183242967f7d2c45b0faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_509.asset using Guid(adde032ea8f183242967f7d2c45b0faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd3a3d68ae3559310c41919da8246fdfc') in 0.005687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001558 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_510.asset
+  artifactKey: Guid(94325c6f3ecbbf04eb4ce3de48047c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_510.asset using Guid(94325c6f3ecbbf04eb4ce3de48047c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '37b77bedce0eefbaca9106493b4eb7f7') in 0.005775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001523 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_511.asset
+  artifactKey: Guid(6be7ed6abc420e942a218f1140267387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_511.asset using Guid(6be7ed6abc420e942a218f1140267387) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '56044ea4740f3fd464937af2ec40ab4b') in 0.005956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000945 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_512.asset
+  artifactKey: Guid(6fc557b5caad32c46a892918beb04340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_512.asset using Guid(6fc557b5caad32c46a892918beb04340) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2f1a0f7a08322d74dca2f1a16c7e5206') in 0.005681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001227 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_513.asset
+  artifactKey: Guid(247d72bc25023fc4d8af0b7eef175121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_513.asset using Guid(247d72bc25023fc4d8af0b7eef175121) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b83174fe57422ccd674a3b346913f616') in 0.006518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001096 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_514.asset
+  artifactKey: Guid(a42ecabad5cf25f4c9c32ca68e491e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_514.asset using Guid(a42ecabad5cf25f4c9c32ca68e491e9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '60b290490dd3eb709060b8dd9091e456') in 0.005767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001313 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_515.asset
+  artifactKey: Guid(d72736085c84e5449bdb34043214d317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_515.asset using Guid(d72736085c84e5449bdb34043214d317) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e13dd56bfa6e4f32b37e82d59ef9a40d') in 0.006438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001552 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_516.asset
+  artifactKey: Guid(b4c2d155d30bf0548900b4a25e8a6b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_516.asset using Guid(b4c2d155d30bf0548900b4a25e8a6b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '1da91aa2a2dd6d272a254eef10af627f') in 0.006365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.028241 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_467.asset
+  artifactKey: Guid(47858fea9ffc80e4eb6078810029d88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_467.asset using Guid(47858fea9ffc80e4eb6078810029d88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '00a345e8c42034467c83aded0d412611') in 0.006793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_468.asset
+  artifactKey: Guid(a8bbdeba5f5aa264fa4a8ba6e3d023d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_468.asset using Guid(a8bbdeba5f5aa264fa4a8ba6e3d023d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'eb7f032165e78ffcf288635349e25a73') in 0.005787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001284 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_469.asset
+  artifactKey: Guid(d46dc7a02503ecb43abc9e821534a1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_469.asset using Guid(d46dc7a02503ecb43abc9e821534a1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '618dd0eb1705570052bfcea677535045') in 0.005940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001346 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_470.asset
+  artifactKey: Guid(1b5bad76fd24cd24b9bf325dbb3e608d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_470.asset using Guid(1b5bad76fd24cd24b9bf325dbb3e608d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3499eda456e58d7adc52563d0a94632d') in 0.005835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001196 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_471.asset
+  artifactKey: Guid(c0d363a3c0494504ebe6672c8151e2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_471.asset using Guid(c0d363a3c0494504ebe6672c8151e2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a3bd053e28c7b7ba6fb8baa2b955af76') in 0.006393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000780 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_472.asset
+  artifactKey: Guid(2166904076f507846a6c09ce8df89c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_472.asset using Guid(2166904076f507846a6c09ce8df89c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4c20aa0c9126fd49bc7fff016559eae4') in 0.005894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001216 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_473.asset
+  artifactKey: Guid(c0c05abe1e58787498602cf77c976254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_473.asset using Guid(c0c05abe1e58787498602cf77c976254) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '37b8c8f3d89bbd8ea5810755768bdafc') in 0.005776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001394 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_474.asset
+  artifactKey: Guid(a6f2539d5560dda42abb61835433f539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_474.asset using Guid(a6f2539d5560dda42abb61835433f539) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '48c55a0cde130116414bcfe0db60a977') in 0.005988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001421 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_475.asset
+  artifactKey: Guid(2dbba89ef6b7c8a42a0b370588e547b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_475.asset using Guid(2dbba89ef6b7c8a42a0b370588e547b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '48b71d5396eff4cf0e9964ef9632c47a') in 0.006197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001191 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_476.asset
+  artifactKey: Guid(0564aab261cce8e4f9fc2ac7ca91258f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_476.asset using Guid(0564aab261cce8e4f9fc2ac7ca91258f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ccb4e3966e073a21ac5038b3e669b066') in 0.005835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001414 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_477.asset
+  artifactKey: Guid(15f883e72a057db419ff5b934b9cd3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_477.asset using Guid(15f883e72a057db419ff5b934b9cd3cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3a61e13ad8bd3342131ede04b23f8fab') in 0.005812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001354 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_478.asset
+  artifactKey: Guid(b4006f21f78399b41b3bf3e18a9d2bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_478.asset using Guid(b4006f21f78399b41b3bf3e18a9d2bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '9c1c941befeab2c2831a204aa698bb6f') in 0.005682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001309 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_479.asset
+  artifactKey: Guid(f031811be7b5d1c4192b08d1100bd55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_479.asset using Guid(f031811be7b5d1c4192b08d1100bd55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3b6263e823eef0eff7a1113342c3856b') in 0.005779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001335 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_480.asset
+  artifactKey: Guid(56455002f41b6da48b32ef9d492633a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_480.asset using Guid(56455002f41b6da48b32ef9d492633a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'cdb48f3ae8c7d6fddc84f1429ed690eb') in 0.006398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001511 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_481.asset
+  artifactKey: Guid(3964be5737f441e4eaa153252bb7d0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_481.asset using Guid(3964be5737f441e4eaa153252bb7d0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7bfa2f9b69698e7ad60383fce8e330ff') in 0.007581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.008275 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_483.asset
+  artifactKey: Guid(b3a8d44572f0b104090809f42bf106fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_483.asset using Guid(b3a8d44572f0b104090809f42bf106fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ba9b1b1156facdf5a18e6473b6557a30') in 0.007867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.007964 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_485.asset
+  artifactKey: Guid(d814f298190825c4cad7ebd2454b0dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_485.asset using Guid(d814f298190825c4cad7ebd2454b0dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '0236729edd9723714d18b1c0b919ceb9') in 0.006868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001247 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_486.asset
+  artifactKey: Guid(15b4a644d7381154b8bdb4a1d6b782aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_486.asset using Guid(15b4a644d7381154b8bdb4a1d6b782aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2936c3bb732f97e294e3d769aa222fcb') in 0.006512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001388 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_487.asset
+  artifactKey: Guid(7442c3c83bff15547a315f68d764caf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_487.asset using Guid(7442c3c83bff15547a315f68d764caf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4b1d8c391afdce881555690fc4973b8d') in 0.007116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003078 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_488.asset
+  artifactKey: Guid(eb06e2bf5e69441499ad83e23de76ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_488.asset using Guid(eb06e2bf5e69441499ad83e23de76ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '31dfe18138b97047d4640e0ccee7a948') in 0.007608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000913 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_489.asset
+  artifactKey: Guid(c493ee4e35e9dae4f9b6b96afc3274fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_489.asset using Guid(c493ee4e35e9dae4f9b6b96afc3274fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '95a6268e11a2a48c9da90dd1d12dd4e4') in 0.006572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001448 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_490.asset
+  artifactKey: Guid(65174e9f791b4d9419699a989fa307b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_490.asset using Guid(65174e9f791b4d9419699a989fa307b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '85ac5818b8e7b54227ee7f92c57df404') in 0.006462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002548 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_491.asset
+  artifactKey: Guid(6661737be2f6abf42863e859bb9d3da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_491.asset using Guid(6661737be2f6abf42863e859bb9d3da2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'dc6ec42287b3de9a5a01439caba81f08') in 0.006484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001012 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_492.asset
+  artifactKey: Guid(f85e1e7c52e8afc4da4f75c32dc187a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_492.asset using Guid(f85e1e7c52e8afc4da4f75c32dc187a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'ed92cc75b4d323e0c70bf139b3cd9e32') in 0.006790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000681 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_493.asset
+  artifactKey: Guid(4dc55459c3d116547a1a8d45b14d7733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_493.asset using Guid(4dc55459c3d116547a1a8d45b14d7733) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'fdef7086cdabd2b04a30ba29b7120ba9') in 0.006279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001107 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_494.asset
+  artifactKey: Guid(964a05d3085f6184dbdb8271ab833df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_494.asset using Guid(964a05d3085f6184dbdb8271ab833df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c9824635bb0aab4dd06d2fb73bb5829f') in 0.006294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001009 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_495.asset
+  artifactKey: Guid(090581e81c5c6a54fae6dc5460b0d048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_495.asset using Guid(090581e81c5c6a54fae6dc5460b0d048) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '243d405ae9e1059dd06f1c7527a323e6') in 0.006223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_496.asset
+  artifactKey: Guid(065c047bcb74537468d9762891f70bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_496.asset using Guid(065c047bcb74537468d9762891f70bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '3225a6d3f5a1b3ca68e0a0fd1379ed72') in 0.006716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001132 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_497.asset
+  artifactKey: Guid(d3cc6ee8a12f8524b8321c022f9ff597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_497.asset using Guid(d3cc6ee8a12f8524b8321c022f9ff597) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '17d9ec4bb317f2bd3442f90e06c6d84d') in 0.006588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001087 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_498.asset
+  artifactKey: Guid(428cd24fb812ce548bfb182e70e99a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_498.asset using Guid(428cd24fb812ce548bfb182e70e99a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '80773df1619d592b814e804cf8133797') in 0.006324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001273 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_499.asset
+  artifactKey: Guid(28daaa343f04e934897bf8ce4455eb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/houses_499.asset using Guid(28daaa343f04e934897bf8ce4455eb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '34707a4f8b779ee9e9747338d8419ef5') in 0.006647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.644872 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone51.asset
+  artifactKey: Guid(42185772788590743aba9f8aa3f45458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone51.asset using Guid(42185772788590743aba9f8aa3f45458) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '588b816217c3a861917c7d6f93d282a5') in 0.008600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.017176 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone52.asset
+  artifactKey: Guid(de86f437f3a36774c98be4c7490e37d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone52.asset using Guid(de86f437f3a36774c98be4c7490e37d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '2ed80cd37aebf770b21f8984e636f850') in 0.008960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone54.asset
+  artifactKey: Guid(a4166324a70f22a4686e923e00be04f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone54.asset using Guid(a4166324a70f22a4686e923e00be04f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '4e38cf08b93c71d87eed6c2410590378') in 0.009958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone56.asset
+  artifactKey: Guid(1a0e557eab63c0246b9791fd47ba7a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone56.asset using Guid(1a0e557eab63c0246b9791fd47ba7a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a08d94cf54b43bcd86ebb40faf8b22fc') in 0.009208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone60.asset
+  artifactKey: Guid(b26b0ef30ec11d64abd272a21f28fcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone60.asset using Guid(b26b0ef30ec11d64abd272a21f28fcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '189cea2177f0d208bc98c1c98793c4b5') in 0.009002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone61.asset
+  artifactKey: Guid(a2c1f81c3c097f3499513b5127981bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone61.asset using Guid(a2c1f81c3c097f3499513b5127981bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '00366c2afe5a24562c2b4cfb558dc534') in 0.008963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone64.asset
+  artifactKey: Guid(9df6a4442c71f3e4d990dec9c233407a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone64.asset using Guid(9df6a4442c71f3e4d990dec9c233407a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '095547db16fb95c05503f6f5048630fd') in 0.009362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone65.asset
+  artifactKey: Guid(533ac16675d6a07439c87ce1a294b8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone65.asset using Guid(533ac16675d6a07439c87ce1a294b8f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'bc54ca5760df01f8a2e2c59a33a56cc3') in 0.004466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone59.asset
+  artifactKey: Guid(88d48f05767d2684eafcb5acf96b7c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone59.asset using Guid(88d48f05767d2684eafcb5acf96b7c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '538fc2f7f508f86338b79b5aaa81682f') in 0.008241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone62.asset
+  artifactKey: Guid(0c1efca2eaa54ed4081ffc620b001bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone62.asset using Guid(0c1efca2eaa54ed4081ffc620b001bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'e878083a58c5247fcd29adffd722289d') in 0.009428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.393536 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone35.asset
+  artifactKey: Guid(c9aa495fbe91347449e2f78e195921f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone35.asset using Guid(c9aa495fbe91347449e2f78e195921f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'de683ec5ecd8c6192d18bd9a46161076') in 0.008407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002402 seconds.
+  path: Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone39.asset
+  artifactKey: Guid(8f69c905084f437428f89e39aebb34d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Forgotten Plains/Sprites/Tileset/Cobblestone39.asset using Guid(8f69c905084f437428f89e39aebb34d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'da151d33e6994335ffddbb80a420a0cc') in 0.329815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1649.746057 seconds.
+  path: Assets/Animations/player/PlayerAnimatorController.controller
+  artifactKey: Guid(312400e5c0961b3429fef176d33a79df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/player/PlayerAnimatorController.controller using Guid(312400e5c0961b3429fef176d33a79df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'f7262ccd8db4f8635b02e8877fb02b49') in 0.014698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 658.893962 seconds.
+  path: Assets/Resources/Dungeon/Scenes/Demo - Animated Characters.unity
+  artifactKey: Guid(e0b55a87f7683d24895d21834aa9834a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Dungeon/Scenes/Demo - Animated Characters.unity using Guid(e0b55a87f7683d24895d21834aa9834a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'c73895dfa7980021040bd0bb0d10f7d6') in 0.005289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.518872 seconds.
+  path: Assets/image/background.jpg
+  artifactKey: Guid(6149a668f16af4651b3795595d703f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/background.jpg using Guid(6149a668f16af4651b3795595d703f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '15820e3a947067c3730cc9c1972be3ce') in 0.025817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.323381 seconds.
+  path: Assets/Resources/Scene 2.prefab
+  artifactKey: Guid(fdd22a0db1ada0143a749210323c767c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Scene 2.prefab using Guid(fdd22a0db1ada0143a749210323c767c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7ef25d7a55b8bd8f624d72f17291c51c') in 0.203645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 832
+========================================================================
+Received Import Request.
+  Time since last request: 8.358707 seconds.
+  path: Assets/Scenes/Scene 1.unity
+  artifactKey: Guid(0ac40d45ee7155b449713c26d9345688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene 1.unity using Guid(0ac40d45ee7155b449713c26d9345688) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6971fa1a80757a5a1a35ca3f087353ee') in 0.000506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.689994 seconds.
+  path: Assets/Scenes/Scene 1.unity
+  artifactKey: Guid(0ac40d45ee7155b449713c26d9345688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene 1.unity using Guid(0ac40d45ee7155b449713c26d9345688) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'b69a2379bb29cae425a6f16820314654') in 0.000477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 17.788087 seconds.
+  path: Assets/Scenes/Scene 2.unity
+  artifactKey: Guid(0ac40d45ee7155b449713c26d9345688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene 2.unity using Guid(0ac40d45ee7155b449713c26d9345688) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '7886e705c2dd5e3f26a60d168a466bcc') in 0.000495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.154009 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '5868138df622cf2d2f7c226c3c38a1af') in 0.005631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 33.242624 seconds.
+  path: Assets/Scenes/Scene 1.unity
+  artifactKey: Guid(023f3dfe7ae869a488b08af9504fbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene 1.unity using Guid(023f3dfe7ae869a488b08af9504fbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '74f051b1017e5cc97d5e139302b73049') in 0.000570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 303.560324 seconds.
+  path: Assets/Resources/Dungeon/Sprites/Props
+  artifactKey: Guid(ccd9dbe32427bf24ea8832c6f18fce94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Dungeon/Sprites/Props using Guid(ccd9dbe32427bf24ea8832c6f18fce94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '78cdfe9c0549405971126daa7b20b634') in 0.005402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.670470 seconds.
+  path: Assets/Resources/Dungeon/Sprites/Tileset/CliffTiles.png
+  artifactKey: Guid(b15ebb5139f72be468de6d294b9bb331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Dungeon/Sprites/Tileset/CliffTiles.png using Guid(b15ebb5139f72be468de6d294b9bb331) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '6d8cc31eb3d8f59754c525393e72cb33') in 0.018093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Dungeon/Sprites/Tileset/FloorTiles.png
+  artifactKey: Guid(96b78cad7bb6ddf4096fc152168d88c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Dungeon/Sprites/Tileset/FloorTiles.png using Guid(96b78cad7bb6ddf4096fc152168d88c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'd13fedc6122973872c10fbf12abb02da') in 0.037122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/Dungeon/Sprites/Tileset/FloorTilesExtra.png
+  artifactKey: Guid(4f6dcb3bc012f9c439961cd00a621636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Dungeon/Sprites/Tileset/FloorTilesExtra.png using Guid(4f6dcb3bc012f9c439961cd00a621636) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: '65189fd70b98e2ba200e167e628d5a63') in 0.016338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.427 seconds
+Refreshing native plugins compatible for Editor in 9.57 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.143 seconds
+Domain Reload Profiling: 1565ms
+	BeginReloadAssembly (146ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (211ms)
+		LoadAssemblies (265ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1143ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (521ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (403ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 9.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4311 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (42.0 KB). Loaded Objects now: 4808.
+Memory consumption went from 150.8 MB to 150.8 MB.
+Total: 3.532600 ms (FindLiveObjects: 0.305200 ms CreateObjectMapping: 0.370000 ms MarkObjects: 2.801100 ms  DeleteObjects: 0.055500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.413 seconds
+Refreshing native plugins compatible for Editor in 8.79 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.134 seconds
+Domain Reload Profiling: 1542ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (200ms)
+		LoadAssemblies (253ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1135ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (537ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (419ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 9.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4312 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (42.1 KB). Loaded Objects now: 4812.
+Memory consumption went from 151.1 MB to 151.1 MB.
+Total: 4.177800 ms (FindLiveObjects: 0.466700 ms CreateObjectMapping: 0.450100 ms MarkObjects: 3.163900 ms  DeleteObjects: 0.095500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1406.736298 seconds.
+  path: Assets/Scenes/Scene 1.unity
+  artifactKey: Guid(023f3dfe7ae869a488b08af9504fbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scene 1.unity using Guid(023f3dfe7ae869a488b08af9504fbc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 20 workers.
+ -> (artifact id: 'a944f19e0938cc08d9148c060fd63159') in 0.002010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
