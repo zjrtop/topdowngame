@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    private string attackAnim = "PlayerAttack";
+    public string attackAnim = "PlayerAttack";
+    public string deathAnim = "PlayerDeath";
     private Animator anim;
     private MovationTouch movation;
     // Start is called before the first frame update
@@ -24,6 +25,14 @@ public class PlayerAnimation : MonoBehaviour
         if (attackAnim.Length != 0)
         {
             anim.Play(attackAnim, 0, 1.0f);
+        }
+    }
+
+    public void PlayerDeath()
+    {
+        if (attackAnim.Length != 0)
+        {
+            anim.Play(deathAnim, 0, 1.0f);
         }
     }
 

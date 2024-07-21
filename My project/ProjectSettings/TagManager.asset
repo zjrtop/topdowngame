@@ -5,14 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Item
+  - enemy
+  - humanbody
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - item
   - Water
   - UI
-  - 
+  - human
   - 
   - 
   - 
