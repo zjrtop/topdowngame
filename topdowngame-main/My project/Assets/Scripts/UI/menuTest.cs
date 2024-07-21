@@ -29,6 +29,12 @@ public class menuTest : MonoBehaviour
     //继续游戏
 
     //游戏设置
+    public void OpenGameSettingUI(){
+        GameObject gameSettingUI = GameObject.FindGameObjectWithTag("gameSettingUI").gameObject;
+        GameObject mainMenu = GameObject.FindGameObjectWithTag("mainMenu").gameObject;
+        gameSettingUI.transform.GetChild(0).gameObject.SetActive(true);
+        mainMenu.transform.GetChild(0).gameObject.SetActive(false);
+    }
 
     //退出游戏
 
