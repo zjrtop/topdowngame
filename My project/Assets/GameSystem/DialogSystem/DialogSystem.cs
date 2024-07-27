@@ -21,7 +21,9 @@ public class DialogSystem : MonoBehaviour
     private bool isInTurn;
 
     private void Update(){
-
+        if (isInTurn && Input.GetKeyDown(KeyCode.E)){
+            Play();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) => isInTurn = true;
