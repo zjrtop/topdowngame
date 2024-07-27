@@ -24,11 +24,24 @@ public class EnemyView : MonoBehaviour
         GameObject colliderObj = other.gameObject;
         if (colliderObj.CompareTag("humanbody"))
         {
+            
+            PlayerStates playerStates = colliderObj.GetComponentInParent<PlayerStates>();
             PlayerAnimation parentAnimtionCtl = colliderObj.GetComponentInParent<PlayerAnimation>();
-            if (parentAnimtionCtl)
+            int sheild = playerStates.GetDetectTimes();
+            if(sheild == 1)
             {
-                parentAnimtionCtl.PlayerDeath();
+                playerStates.DecreaseShield();
+                Debug.Log("Sheild Consumer");
             }
+            else
+            {
+                if (parentAnimtionCtl)
+                {
+                    parentAnimtionCtl.PlayerDeath();
+                }
+                Debug.Log("Player death");
+            }
+ 
         }
         Debug.Log("Trigger entered with " + other.gameObject.name);
     }
