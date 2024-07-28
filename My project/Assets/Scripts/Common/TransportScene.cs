@@ -29,7 +29,8 @@ public class TransportScene : MonoBehaviour
                     playerStates.SaveData();
                     Debug.Log("SaveData redhat");
                 }
-                SceneManager.LoadScene(NewSceneName);
+                //SceneManager.LoadScene(NewSceneName);
+                StartCoroutine(TransitionScene(NewSceneName));
             }
             else
             {
@@ -39,6 +40,14 @@ public class TransportScene : MonoBehaviour
             
     }
 
+    public IEnumerator TransitionScene(string sceneName)
+    {
+        yield return StartCoroutine(Fader.Instance.FadeSceneOut());
+
+        yield return SceneManager.LoadSceneAsync(sceneName);
+
+        yield return StartCoroutine(Fader.Instance.FaderSceneIn());
+    }
 
 
 }
