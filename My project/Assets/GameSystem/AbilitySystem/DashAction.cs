@@ -8,14 +8,14 @@ public class DashAction : BaseAction
 {
     // Start is called before the first frame update
     public float dashSpeed = 500.0f;
-    public int sampleRate = 11;
+    // public int sampleRate = 11;
 
     private float walkSpeed = 200.0f;
-    private int originRate = 7;
+    // private int originRate = 7;
 
     void Start()
     {
-        
+        duration = 5.0f;
     }
 
     // Update is called once per frame
@@ -32,24 +32,27 @@ public class DashAction : BaseAction
         base.StartAction();
         MovationTouch movationTouch = GetComponentInParent<MovationTouch>();         // 获取移动组件。
         if (movationTouch == null) Debug.Log("Dash fuck fuck");
-        PlayerAnimation playerAnimation = GetComponentInParent<PlayerAnimation>();
-              if (playerAnimation == null) Debug.Log("Dash fuck2 fuck2");
+        // PlayerAnimation playerAnimation = GetComponentInParent<PlayerAnimation>();
+        //       if (playerAnimation == null) Debug.Log("Dash fuck2 fuck2");
 
-        if (movationTouch != null && playerAnimation != null){
+        // if (movationTouch != null && playerAnimation != null)
+        if (movationTouch != null){
             Debug.Log("Dash go go");
             movationTouch.moveSpeed = dashSpeed;
-            playerAnimation.SetAnimationRate("walk", sampleRate);
+            //playerAnimation.SetAnimationRate("walk", sampleRate);
         }
     }
 
     public new void StopAction(){
         base.StopAction();
         MovationTouch movationTouch = GetComponentInParent<MovationTouch>();         // 获取移动组件。
-        PlayerAnimation playerAnimation = GetComponentInParent<PlayerAnimation>();
-        if (movationTouch != null && playerAnimation != null){
+        // PlayerAnimation playerAnimation = GetComponentInParent<PlayerAnimation>();
+        //  if (movationTouch != null && playerAnimation != null)
+        if (movationTouch != null){
             Debug.Log("Dash stop stop");
             movationTouch.moveSpeed = walkSpeed;
-            playerAnimation.SetAnimationRate("walk", originRate);
+            // playerAnimation.SetAnimationRate("walk", originRate);
         }
+        Destroy(this);
     }
 }

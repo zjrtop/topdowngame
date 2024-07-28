@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
-public class DashItem : MonoBehaviour
+public class ViewItem : MonoBehaviour
 {
     // Start is called before the first frame update
+    public Sprite originView;
+    // public int sampleRate = 11;
+
+    public Sprite NewView;
+    // private int originRate = 7;
     void Start()
     {
         
@@ -16,6 +22,7 @@ public class DashItem : MonoBehaviour
         
     }
 
+
     private void OnTriggerEnter2D(Collider2D other) {
         GameObject colliderObj = other.gameObject;
         if (colliderObj.CompareTag("humanbody"))
@@ -25,8 +32,10 @@ public class DashItem : MonoBehaviour
             // {
             //     parentAnimtionCtl.PlayerDeath();
             // }
-            DashAction dashAction = colliderObj.AddComponent<DashAction>();
-            dashAction.StartAction();
+            ViewAction viewAction = colliderObj.AddComponent<ViewAction>();
+            viewAction.originView = originView;
+            viewAction.NewView = NewView;
+            viewAction.StartAction();
             Debug.Log("player get dash item " + other.gameObject.name);
             gameObject.SetActive(false);
         }
@@ -34,8 +43,5 @@ public class DashItem : MonoBehaviour
 
     }
 
-    private void OnTriggerExit2D(Collider2D other) {
-        
-    }
 
 }
