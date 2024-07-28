@@ -384,8 +384,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7323174547674679176, guid: a06dfbe8e7ab346568c30d42a70b3342, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323174547674679176, guid: a06dfbe8e7ab346568c30d42a70b3342, type: 3}
       propertyPath: ShapeModule.type
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323174547674679176, guid: a06dfbe8e7ab346568c30d42a70b3342, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7323174547674679176, guid: a06dfbe8e7ab346568c30d42a70b3342, type: 3}
       propertyPath: ShapeModule.arc.value
