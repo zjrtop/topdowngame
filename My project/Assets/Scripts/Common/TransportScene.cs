@@ -6,21 +6,12 @@ using UnityEngine.SceneManagement;
 public class TransportScene : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string NewSceneName = "HouseScene";
 
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // »ñÈ¡¸¸×é¼þµÄTransform
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Transform
         GameObject colliderObj = other.gameObject;
         if (colliderObj.CompareTag("humanbody"))
         {
@@ -28,13 +19,19 @@ public class TransportScene : MonoBehaviour
 
             if (parentTransform != null)
             {
-                // »ñÈ¡¸¸×é¼þµÄGameObject
+                // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GameObject
                 GameObject parentGameObject = parentTransform.gameObject;
 
-                // ´òÓ¡¸¸×é¼þµÄÃû×Ö
+                // ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 Debug.Log("Parent GameObject: " + parentGameObject.name);
-                DontDestroyOnLoad(parentGameObject);
-                SceneManager.LoadScene("HouseScene");
+                PlayerStates playerStates = parentGameObject.GetComponent<PlayerStates>();
+            
+                if (playerStates != null) {
+                    playerStates.SaveData();
+                    Debug.Log("SaveData redhat");
+                }
+                //SceneManager.LoadScene(NewSceneName);
+                StartCoroutine(TransitionScene(NewSceneName));
             }
             else
             {
@@ -44,6 +41,14 @@ public class TransportScene : MonoBehaviour
             
     }
 
+    public IEnumerator TransitionScene(string sceneName)
+    {
+        yield return StartCoroutine(Fader.Instance.FadeSceneOut());
+
+        yield return SceneManager.LoadSceneAsync(sceneName);
+
+        yield return StartCoroutine(Fader.Instance.FaderSceneIn());
+    }
 
 
 }
