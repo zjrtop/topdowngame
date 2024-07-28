@@ -29,6 +29,9 @@ public class StartGameScript : MonoBehaviour
         loadingPanel.SetActive(false);
         loadingMask.color = new Color(loadingMask.color.r, loadingMask.color.g, loadingMask.color.b, 1);
 
+        // 播放开屏界面的背景音乐
+        AudioManager.instance.Play("MainMenuBGM");
+
         // 绑定开始按钮点击事件
         startButton.onClick.AddListener(OnStartButtonClicked);
     }
@@ -41,6 +44,12 @@ public class StartGameScript : MonoBehaviour
             Debug.LogError("One or more required components are not assigned or are missing.");
             return;
         }
+
+        // 播放开始游戏按钮点击音效
+        AudioManager.instance.Play("StartGameClick");
+
+        // 停止背景音乐
+        AudioManager.instance.Stop("MainMenuBGM");
 
         // 隐藏所有菜单元素
         menuElements.SetActive(false);
