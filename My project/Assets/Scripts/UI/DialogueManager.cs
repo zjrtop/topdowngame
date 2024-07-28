@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // 添加 TextMeshPro 的命名空间
+using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
     public DialogueData[] dialogues; // 存储对话内容的数组
 
     private int currentDialogueIndex = 0; // 当前对话的索引
+
+    public bool isDialogueCompleted { get; private set; } = false; // 记录对话是否完成
 
     void Start()
     {
@@ -44,7 +46,9 @@ public class DialogueManager : MonoBehaviour
         {
             // 对话结束，执行关闭对话框的逻辑
             Debug.Log("End of dialogue");
-            transform.parent.gameObject.SetActive(false); // 关闭对话框
+            //transform.parent.gameObject.SetActive(false); // 关闭对话框
+            transform.gameObject.SetActive(false); 
+            isDialogueCompleted = true; // 标记对话完成
         }
     }
 }
