@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     public string attackAnim = "PlayerAttack";
-    public string deathAnim = "PlayerDeath";
+    public string deathAnim = "Disappear";
     private Animator anim;
     private MovationTouch movation;
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class PlayerAnimation : MonoBehaviour
     public void Update()
     {
         if (anim != null)
-        anim.SetFloat("velocity", movation.GetVelocity());
+        anim.SetInteger("walkingStates", movation.GetFaceDir());
     }
 
     public void PlayAttack()
