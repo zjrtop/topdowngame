@@ -6,16 +6,7 @@ using UnityEngine.SceneManagement;
 public class TransportScene : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string NewSceneName = "HouseScene";
 
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,8 +24,12 @@ public class TransportScene : MonoBehaviour
 
                 // 打印父组件的名字
                 Debug.Log("Parent GameObject: " + parentGameObject.name);
-                DontDestroyOnLoad(parentGameObject);
-                SceneManager.LoadScene("HouseScene");
+                PlayerStates playerStates = parentGameObject.GetComponent<PlayerStates>();
+                if (playerStates != null) {
+                    playerStates.SaveData();
+                    Debug.Log("SaveData redhat");
+                }
+                SceneManager.LoadScene(NewSceneName);
             }
             else
             {
