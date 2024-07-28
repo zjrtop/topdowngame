@@ -12,43 +12,49 @@ public class RayInteract : MonoBehaviour
 
     void Start()
     {
-
     }
 
     private void DistributeRay()
     {
-        
-        Vector3 rayDirection = new Vector2(1.0f, 0.0f);
-/*        Ray ray = new Ray(transform.position, rayDirection);//创建并初始化射线*/
 
+        Transform parentTransform = transform.parent;
+        Vector3 parentPosition =  transform.position;
+        // 确保父组件存在
+        if (parentTransform != null)
+        {
+            // 获取父组件位置
+            parentPosition = parentTransform.position;
 
-        float rayDistance = 100.0f;//射线距离
+        }
+
+        //Vector3 rayDirection = new Vector2(1.0f, 0.0f);
+        /*        Ray ray = new Ray(transform.position, rayDirection);//创建并初始化射线*/
+        Vector3 rayDirection = transform.right;
+
+        float rayDistance = 50.0f;//射线距离
 
         Color rayColor = Color.red;//定义射线颜色
 
         RaycastHit2D hit;
 
-        hit = Physics2D.Raycast(transform.position, rayDirection, interactInstance, interactableLayer);
+        hit = Physics2D.Raycast(parentPosition, rayDirection, interactInstance, interactableLayer);
         //debug显示出射线,不显示并不影响实际效果，射线会默认存在
 
-        if (hit.collider == null)
+        if (hit.collider != null)
         {
             //默认射线长度
             //Debug.Log("name nothing");
-        }
-        else
-        {
-            Debug.DrawLine(transform.position, transform.position + (Vector3)rayDirection * rayDistance, Color.blue);
-            Debug.DrawRay(transform.position, rayDirection * rayDistance, Color.red, 1.0f);
+            //Debug.DrawLine(transform.position, transform.position + (Vector3)rayDirection * rayDistance, Color.blue);
+            //Debug.DrawRay(transform.position, rayDirection * rayDistance, Color.red, 1.0f);
 
             //Debug.Log("interact with item");
             //射线碰撞并检测到物体，则让射线距离变为发射源到物体的距离
             //Debug.Log("Hit an interactable item: " + hit.collider.gameObject.name);
-            if (hit.collider.gameObject.CompareTag("Item"))
+            if (hit.collider.gameObject.CompareTag("humanbody"))
             {
-                Debug.Log("检测到道具");
+                Debug.Log("检测到玩家");
             }
-            rayDistance = Vector3.Distance(transform.position, hit.collider.gameObject.transform.position);
+            rayDistance = Vector3.Distance(parentPosition, hit.collider.gameObject.transform.position);
         }
 
 
