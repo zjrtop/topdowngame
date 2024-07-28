@@ -11,7 +11,7 @@ public class TransportScene : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // »ñÈ¡¸¸×é¼þµÄTransform
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Transform
         GameObject colliderObj = other.gameObject;
         if (colliderObj.CompareTag("humanbody"))
         {
@@ -19,12 +19,13 @@ public class TransportScene : MonoBehaviour
 
             if (parentTransform != null)
             {
-                // »ñÈ¡¸¸×é¼þµÄGameObject
+                // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GameObject
                 GameObject parentGameObject = parentTransform.gameObject;
 
-                // ´òÓ¡¸¸×é¼þµÄÃû×Ö
+                // ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 Debug.Log("Parent GameObject: " + parentGameObject.name);
                 PlayerStates playerStates = parentGameObject.GetComponent<PlayerStates>();
+            
                 if (playerStates != null) {
                     playerStates.SaveData();
                     Debug.Log("SaveData redhat");
