@@ -5,12 +5,12 @@ using UnityEngine;
 public class Rotation : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform childTransform; // ÐèÒªÐý×ªµÄ×Ó¶ÔÏó
-    public float maxAngle = 45.0f;   // ×î´óÐý×ª½Ç¶È£¨Õý¸º£©
-    public float speed = 1.0f;       // °Ú¶¯ËÙ¶È
+    public Transform childTransform; // ï¿½ï¿½Òªï¿½ï¿½×ªï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½
+    public float maxAngle = 45.0f;   // ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½Ç¶È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public float speed = 1.0f;       // ï¿½Ú¶ï¿½ï¿½Ù¶ï¿½
 
-    private float currentAngle = 0.0f; // µ±Ç°½Ç¶È
-    private int direction = 1;         // µ±Ç°Ðý×ª·½Ïò
+    private float currentAngle = 0.0f; // ï¿½ï¿½Ç°ï¿½Ç¶ï¿½
+    private int direction = 1;         // ï¿½ï¿½Ç°ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
 
     void Start()
     {
@@ -22,49 +22,49 @@ public class Rotation : MonoBehaviour
     {
         rotate2();
     }
-    void rotate()
-    {
-        // ¼ÆËãÃ¿Ö¡Ðý×ªµÄ½Ç¶ÈÔöÁ¿
-        float deltaAngle = speed * Time.deltaTime;
+    // void rotate()
+    // {
+    //     // ï¿½ï¿½ï¿½ï¿½Ã¿Ö¡ï¿½ï¿½×ªï¿½Ä½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½
+    //     float deltaAngle = speed * Time.deltaTime;
 
-        // Èç¹û´ïµ½×î´ó½Ç¶È£¬Ôò·´×ª·½Ïò
-        if (Mathf.Abs(currentAngle) >= maxAngle)
-        {
-            direction *= -1; // ·´×ª·½Ïò
-        }
+    //     // ï¿½ï¿½ï¿½ï¿½ïµ½ï¿½ï¿½ï¿½Ç¶È£ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
+    //     if (Mathf.Abs(currentAngle) >= maxAngle)
+    //     {
+    //         direction *= -1; // ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
+    //     }
 
-        // ¸üÐÂµ±Ç°½Ç¶È
-        currentAngle += direction * deltaAngle;
+    //     // ï¿½ï¿½ï¿½Âµï¿½Ç°ï¿½Ç¶ï¿½
+    //     currentAngle += direction * deltaAngle;
 
-        // ÏÞÖÆµ±Ç°½Ç¶ÈÔÚ×î´ó½Ç¶È·¶Î§ÄÚ
-        currentAngle = Mathf.Clamp(currentAngle, -maxAngle, maxAngle);
+    //     // ï¿½ï¿½ï¿½Æµï¿½Ç°ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶È·ï¿½Î§ï¿½ï¿½
+    //     currentAngle = Mathf.Clamp(currentAngle, -maxAngle, maxAngle);
 
-        // ¼ÆËã×Ó¶ÔÏóÏà¶ÔÓÚ¸¸¶ÔÏóµÄÎ»ÖÃ
-        Vector3 rotationPosition = Quaternion.Euler(0, 0, currentAngle) * Vector3.right;
+    //     // ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+    //     Vector3 rotationPosition = Quaternion.Euler(0, 0, currentAngle) * Vector3.right;
 
-        // ÉèÖÃ×Ó¶ÔÏóµÄÎ»ÖÃ
-        childTransform.localPosition = rotationPosition;
+    //     // ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+    //     childTransform.localPosition = rotationPosition;
 
-        // ¿ÉÑ¡£ºÍ¬²½×Ó¶ÔÏóµÄÐý×ª½Ç¶È£¨Ê¹ÆäÃæÏòÕýÈ··½Ïò£©
-        childTransform.localRotation = Quaternion.Euler(0, 0, currentAngle);
-    }
+    //     // ï¿½ï¿½Ñ¡ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½Ç¶È£ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½
+    //     childTransform.localRotation = Quaternion.Euler(0, 0, currentAngle);
+    // }
     void rotate2()
     {
         float deltaAngle = speed * Time.deltaTime;
 
-        // Èç¹ûµ½´ïÁË×î´ó½Ç¶È£¬Ôò·´×ª·½Ïò
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶È£ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
         if (Mathf.Abs(currentAngle) >= maxAngle)
         {
-            direction *= -1; // ·´×ª·½Ïò
+            direction *= -1; // ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
         }
 
-        // ¸üÐÂµ±Ç°½Ç¶È
+        // ï¿½ï¿½ï¿½Âµï¿½Ç°ï¿½Ç¶ï¿½
         currentAngle += direction * deltaAngle;
 
-        // ÏÞÖÆµ±Ç°½Ç¶ÈÔÚ×î´ó½Ç¶È·¶Î§ÄÚ
+        // ï¿½ï¿½ï¿½Æµï¿½Ç°ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶È·ï¿½Î§ï¿½ï¿½
         currentAngle = Mathf.Clamp(currentAngle, -maxAngle, maxAngle);
 
-        // ÈÆ¸¸¶ÔÏóµÄÎ»ÖÃÐý×ª
+        // ï¿½Æ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½×ª
         childTransform.RotateAround(transform.position, Vector3.forward, direction * deltaAngle);
     }
 }
