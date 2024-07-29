@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerTeleport : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerTeleport : MonoBehaviour
     void Start()
     {
         int defaultValue = 1; // 如果键不存在，则返回默认值
+
         progress = PlayerPrefs.GetInt("myIntKey", defaultValue);
 
         PlayerStates playerStates = GetComponent<PlayerStates>();
@@ -55,6 +57,7 @@ public class PlayerTeleport : MonoBehaviour
     {
         Vector3 destination = position;
 
+        Debug.Log(destination);
         if (rb != null)
         {
             rb.isKinematic = true;
