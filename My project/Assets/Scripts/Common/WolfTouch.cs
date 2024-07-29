@@ -27,7 +27,7 @@ public class WolfTouch : MonoBehaviour
             {
                 SceneManager.LoadScene(scene2);
             }
-            else
+            else if (value1 == 1)
             {
                 SceneManager.LoadScene(scene1);
             }
