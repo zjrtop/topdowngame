@@ -27,7 +27,12 @@ public class ShieldItem : MonoBehaviour
             // {
             //     parentAnimtionCtl.PlayerDeath();
             // }
-            ShieldAction shieldAction = colliderObj.AddComponent<ShieldAction>();
+            ShieldAction shieldAction = colliderObj.GetComponent<ShieldAction>(); 
+            if (shieldAction != null)
+            {
+                shieldAction.Refresh();
+            }
+            shieldAction = colliderObj.AddComponent<ShieldAction>();
             shieldAction.sprite = sprite;
             shieldAction.StartAction();
             Debug.Log("player get dash item " + other.gameObject.name);

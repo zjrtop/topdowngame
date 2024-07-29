@@ -9,6 +9,8 @@ TagManager:
   - humanbody
   - maskview
   - bornpoint1
+  - bornpoint2
+  - bornpoint3
   layers:
   - Default
   - TransparentFX

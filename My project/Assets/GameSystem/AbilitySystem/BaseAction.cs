@@ -11,14 +11,21 @@ public class BaseAction : MonoBehaviour
     private float startTime;
 
 
-
+    public void Refresh()
+    {
+        if (bIsRunning)
+        {
+            startTime = Time.time;
+        }
+    }
 
     public float GetTimeRemaining(){
         return duration - Time.time + startTime;
     }
+
+
     public virtual void StartAction(){
-  
-    
+
     Transform parentTransform = transform.parent;
 
         if (parentTransform != null)
@@ -26,14 +33,11 @@ public class BaseAction : MonoBehaviour
             // 打印自己的名字
             Debug.Log(string.Format("Runing: %s",  GetType().Name));
         }
-
-        
         startTime = Time.time;
         bIsRunning = true;
     }
 
     public virtual void StopAction(){
-	//LogScreen(this, FString::Printf(TEXT("Started : %s"), *ActionName.ToString()), FColor::Green);
     
         Transform parentTransform = transform.parent;
 
@@ -42,8 +46,6 @@ public class BaseAction : MonoBehaviour
             // 如果父对象存在，获取父对象的GameObject并打印其名字
             Debug.Log(string.Format("Stop: %s", GetType().Name));
         }
-
-        
         startTime = -1 ;
         bIsRunning = false;
     }

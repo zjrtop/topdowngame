@@ -38,8 +38,8 @@ public class JoyContainer : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoi
 
         InputDirection = new Vector3(position.x, position.y, 0);
         //InputDirection = new Vector3(x, y, 0);
-        InputDirection = (InputDirection.magnitude > 1) ? InputDirection.normalized : InputDirection;
-
+        //InputDirection = (InputDirection.magnitude > 1) ? InputDirection.normalized : InputDirection;
+        InputDirection = InputDirection.normalized;
         //限定Joystick能移动的区域
         joystick.rectTransform.anchoredPosition = new Vector3(InputDirection.x * (jsContainer.rectTransform.sizeDelta.x / 3)
                                                                , InputDirection.y * (jsContainer.rectTransform.sizeDelta.y) / 3);
