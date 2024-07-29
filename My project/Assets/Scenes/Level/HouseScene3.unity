@@ -952,7 +952,8 @@ MonoBehaviour:
   nextButton: {fileID: 1065789276}
   dialogues:
   - name: "\u5546\u4EBA\uFF1A"
-    dialogue: "\u201C\u770B\u89C1\u4F60\u6765\u6211\u771F\u662F\u592A\u9AD8\u5174\u4E86\uFF01\u600E\u4E48\u6837\uFF0C\u730E\u4EBA\u88AB\u51C0\u5316\u4E86\u5427\u201D\u3002\u201D"
+    dialogue: "\u201C\u770B\u89C1\u4F60\u6765\u6211\u771F\u662F\u592A\u9AD8\u5174\u4E86\uFF01\u600E\u4E48\u6837\uFF0C\u6211\u6CA1\u6709\u8BF4\u8C0E\u5427\uFF0C\u9001\u53BB\u7684\u9053\u5177\u662F\u4E0D\u662F\u51C0\u5316\u4E86\u4F60\u7684\u730E\u4EBA\u4F19\u4F34
+      \uFF1F\u201D"
     portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
   - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
     dialogue: "\u201D\u662F\u7684\uFF0C\u6211\u4EEC\u5C31\u5FEB\u6210\u529F\u4E86\u3002\u201C"
@@ -961,19 +962,25 @@ MonoBehaviour:
     dialogue: "\u201C\u6700\u540E\u4E00\u4F4D\u9700\u8981\u6551\u8D4E\u7684\u4F19\u4F34\uFF0C\u662F\u4F60\u7684\u5976\u5976\u3002\u201D"
     portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
   - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
-    dialogue: "\u201D\uFF08\u60B2\u4F24\uFF09\u5976\u5976...\u201D"
+    dialogue: "\uFF08\u60B2\u4F24\uFF09\u201D\u5976\u5976...\u201D"
     portrait: {fileID: 21300000, guid: ce551651a6cfdcd4fb9e3aba787b0ed0, type: 3}
   - name: "\u5546\u4EBA\uFF1A"
     dialogue: "\u201C\u60F3\u8D77\u4E86\u4F60\u4EEC\u66FE\u7ECF\u6E29\u99A8\u7684\u56DE\u5FC6\u4E86\u5417\uFF1F\u4E56\u5B69\u5B50\uFF0C\u575A\u6301\u4E0B\u53BB\uFF0C\u6211\u4EEC\u4E00\u8D77\u628A\u5976\u5976\u6551\u51FA\u6765\uFF0C\u597D\u5417\uFF1F\u201D"
     portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
   - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
-    dialogue: "\u201C\u4E3A\u4E86\u5976\u5976\uFF0C\u6211\u4F1A\u52AA\u529B\u7684...\u201D"
+    dialogue: "\u201D\u8BA9\u6211\u770B\u770B\u4F60\u7684\u9505\u201C\uFF08\u5411\u524D\u8D70\uFF0C\u5411\u5546\u4EBA\u8EAB\u540E\u770B\u53BB\uFF09"
     portrait: {fileID: 21300000, guid: ce551651a6cfdcd4fb9e3aba787b0ed0, type: 3}
   - name: "\u5546\u4EBA\uFF1A"
-    dialogue: "\u201C\u8C1C\u9898\u53EA\u5269\u4E0B\u8FD9\u4E00\u9053\u4E86\uFF0C\u5FEB\u51FA\u53D1\u5427\uFF01\u68EE\u6797\u7684\u66D9\u5149\u5C31\u8981\u6765\u4E86\uFF01\u201D"
+    dialogue: "\uFF08\u5FEB\u8D70\u4E00\u6B65\u6321\u5728\u4F60\u8EAB\u524D\uFF09\u201C\u5C0F\u7EA2\u5E3D\uFF0C\u4F60\u53C8\u8981\u8FDD\u53CD\u6211\u4EEC\u7684\u7EA6\u5B9A\u4E86\uFF01\u201D"
     portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
   - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
-    dialogue: "\u201D\u6211\u4EEC\u51FA\u53D1\u5427\uFF01\u201C"
+    dialogue: "\uFF08\u867D\u7136\u88AB\u6321\u4F4F\uFF0C\u4F46\u4F60\u6E05\u6E05\u695A\u695A\u5730\u770B\u5230\u4E86\u9505\u8FB9\u6302\u7740\u7684\u730E\u4EBA\u7684\u8863\u89D2\uFF09"
+    portrait: {fileID: 21300000, guid: ce551651a6cfdcd4fb9e3aba787b0ed0, type: 3}
+  - name: "\u5546\u4EBA\uFF1A"
+    dialogue: "\u201C\u4E0D\u8981\u53D1\u5446\u4E86\uFF01\u8C1C\u9898\u53EA\u5269\u4E0B\u8FD9\u4E00\u9053\u4E86\uFF0C\u5FEB\u51FA\u53D1\u5427\uFF01\u68EE\u6797\u7684\u66D9\u5149\u5C31\u8981\u6765\u4E86\uFF01\u201D"
+    portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
+  - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
+    dialogue: "\u201D......\u201C"
     portrait: {fileID: 21300000, guid: ce551651a6cfdcd4fb9e3aba787b0ed0, type: 3}
 --- !u!1 &574206695
 GameObject:
@@ -2677,6 +2684,7 @@ GameObject:
   - component: {fileID: 847914380}
   - component: {fileID: 847914379}
   - component: {fileID: 847914378}
+  - component: {fileID: 847914381}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -2728,10 +2736,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.52698445, y: -6.6312237}
+  m_Offset: {x: -0.52698445, y: -6.0311117}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2742,7 +2750,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3668456, y: 0.12169027}
+  m_Size: {x: 4.3668456, y: 1.3219142}
   m_EdgeRadius: 0
 --- !u!483693784 &847914379
 TilemapRenderer:
@@ -2831,6 +2839,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &847914381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847914376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e2c2612c6572c4bbaccc638305836a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: myIntKey
+  value: 3
 --- !u!1 &923969140
 GameObject:
   m_ObjectHideFlags: 0

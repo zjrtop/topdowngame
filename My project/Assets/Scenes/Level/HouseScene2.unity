@@ -984,9 +984,21 @@ MonoBehaviour:
   - name: "\u5546\u4EBA\uFF1A"
     dialogue: "\u201C\u600E\u4E48\u4E86\uFF0C\u5C0F\u59D1\u5A18\uFF1F\u201D"
     portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
-  - name: "\u5C0F\u7EA2\u5E3D"
-    dialogue: "\u201C\u600E\u4E48\u4E86\uFF0C\u5C0F\u59D1\u5A18\uFF1F\u201D"
+  - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
+    dialogue: "\u201C\u4F60\u80CC\u540E\u7684\u9505\u91CC\u4E3A\u4EC0\u4E48\u6709\u5927\u7070\u72FC\u7684\u722A\u5B50\uFF01\u201D\uFF08\u4F60\u8FB9\u8BF4\u8FB9\u6014\u6014\u5730\u540E\u9000\uFF09"
+    portrait: {fileID: 21300000, guid: ce551651a6cfdcd4fb9e3aba787b0ed0, type: 3}
+  - name: "\u5546\u4EBA\uFF1A"
+    dialogue: "\u201C\uFF08\u614C\u5FD9\u6321\u4F4F\uFF09\u554A\u54C8\u54C8\uFF0C\u8FD9\u662F...\u8FD9\u662F\u51C0\u5316\u7684\u4E00\u4E2A\u6B65\u9AA4\uFF0C\u6709\u65F6\u5019\u6211\u4EEC\u9700\u8981\u8BA9\u91CE\u517D\u65E0\u5BB3\u5316\uFF0C\u624D\u80FD\u4FDD\u62A4\u81EA\u5DF1\u3002\u201D"
     portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
+  - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
+    dialogue: "\uFF08\u4E00\u80A1\u9178\u6DA9\u3001\u6050\u60E7\u7684\u611F\u89C9\u6D8C\u4E0A\u5FC3\u5934\uFF09"
+    portrait: {fileID: 21300000, guid: ce551651a6cfdcd4fb9e3aba787b0ed0, type: 3}
+  - name: "\u5546\u4EBA\uFF1A"
+    dialogue: "\u201C\u5C0F\u7EA2\u5E3D\uFF0C\u518D\u4E0D\u51FA\u53D1\uFF0C\u6211\u53EF\u8981\u628A\u4E66\u6536\u8D77\u6765\u4E86\uFF0C\u505A\u751F\u610F\uFF0C\u4F60\u4E0D\u4FE1\u4EFB\u6211\uFF0C\u90A3\u6211\u4EEC\u6CA1\u5FC5\u8981\u5408\u4F5C\uFF01\u201D"
+    portrait: {fileID: 21300000, guid: aff442c99d3b6eb4da74ee637d8d694f, type: 3}
+  - name: "\u5C0F\u7EA2\u5E3D\uFF1A"
+    dialogue: "\u201D\u4E0D...\u4E0D\uFF01\u6211\u53BB\uFF01\u201C"
+    portrait: {fileID: 21300000, guid: ce551651a6cfdcd4fb9e3aba787b0ed0, type: 3}
 --- !u!1 &574206695
 GameObject:
   m_ObjectHideFlags: 3
@@ -2689,6 +2701,7 @@ GameObject:
   - component: {fileID: 847914380}
   - component: {fileID: 847914379}
   - component: {fileID: 847914378}
+  - component: {fileID: 847914381}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -2740,10 +2753,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.52698445, y: -6.6312237}
+  m_Offset: {x: -0.52698445, y: -6.037855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2754,7 +2767,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3668456, y: 0.12169027}
+  m_Size: {x: 4.3668456, y: 1.3084278}
   m_EdgeRadius: 0
 --- !u!483693784 &847914379
 TilemapRenderer:
@@ -2843,6 +2856,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &847914381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847914376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e216d3517976c51468f8d27927503ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: myIntKey
+  value: 2
 --- !u!1 &923969140
 GameObject:
   m_ObjectHideFlags: 0
