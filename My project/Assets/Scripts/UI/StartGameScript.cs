@@ -131,7 +131,7 @@ public class StartGameScript : MonoBehaviour
         {
             Debug.Log("Mask is now black, starting scene load");
             // 完全变黑后开始加载新场景
-            StartCoroutine(LoadSceneCoroutine("HouseScene"));
+            StartCoroutine(LoadSceneCoroutine("HouseScene1"));
         });
     }
 
