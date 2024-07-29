@@ -5,28 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class WolfTouch : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    // 检查的 PlayerPrefs 键
+    public string key1 = "myIntKey";
+    public string key2 = "buttonClickStatus";
 
-    }
+    // 目标场景名称
+    public string scene1 = "HouseScene1";
+    public string scene2 = "HouseScene2";
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     void OnTriggerEnter2D(Collider2D other)
     {
-        // ��ȡ�������Transform
-
         GameObject colliderObj = other.gameObject;
         if (colliderObj.CompareTag("humanbody"))
         {
-            PlayerStates playerStates = colliderObj.GetComponentInParent<PlayerStates>();
-            int progress = playerStates.progress;
-            if (progress == 1)
-                SceneManager.LoadScene("HouseScene2");
+            // 获取两个 PlayerPrefs 的值
+            int value1 = PlayerPrefs.GetInt(key1, 0);
+            int value2 = PlayerPrefs.GetInt(key2, 0);
+
+            // 检查两个值是否都为1
+            if (value1 == 1 && value2 == 1)
+            {
+                SceneManager.LoadScene(scene2);
+            }
+            else
+            {
+                SceneManager.LoadScene(scene1);
+            }
         }
     }
 }
