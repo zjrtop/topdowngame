@@ -52,7 +52,7 @@ public class EnemyMovation : MonoBehaviour
             //     }
             //     transform.localScale = new Vector3(faceDir, 1, 1);
 
-
+            
             // }
         }else{
             //触发死亡
@@ -71,6 +71,11 @@ public class EnemyMovation : MonoBehaviour
                     parentAnimtionCtl.PlayerDeath();
                 }
                 Debug.Log("Player death");
+                PlayerTeleport playerTeleport = colliderObj.GetComponentInParent<PlayerTeleport>();
+                if (playerTeleport != null)
+                {
+                    playerTeleport.Teleport();
+                }
             }
         }
     }

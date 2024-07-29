@@ -53,6 +53,29 @@ public class RayInteract : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("humanbody"))
             {
                 Debug.Log("¼ì²âµ½Íæ¼Ò");
+                GameObject colliderObj = hit.collider.gameObject;
+                PlayerStates playerStates = colliderObj.GetComponentInParent<PlayerStates>();
+                
+                PlayerAnimation parentAnimtionCtl = colliderObj.GetComponentInParent<PlayerAnimation>();
+                int sheild = playerStates.GetDetectTimes();
+                if (sheild == 1)
+                {
+                    playerStates.DecreaseShield();
+                    Debug.Log("Sheild Consumer");
+                }
+                else
+                {
+                    if (parentAnimtionCtl)
+                    {
+                        parentAnimtionCtl.PlayerDeath();
+                    }
+                    Debug.Log("Player death");
+                    PlayerTeleport playerTeleport = colliderObj.GetComponentInParent<PlayerTeleport>();
+                    if (playerTeleport != null) {
+                        playerTeleport.Teleport();
+                    }
+                }
+
             }
             rayDistance = Vector3.Distance(parentPosition, hit.collider.gameObject.transform.position);
         }
