@@ -11,19 +11,29 @@ public class StartGameScript : MonoBehaviour
     public CanvasGroup loadingMask; // 加载遮罩
     public Button startButton; // 开始按钮
     public GameObject menuElements; // 包含所有菜单元素的父对象
-    public float blinkDuration = 0.5f; // 闪烁动画时间
-    public float maskFadeDuration = 0.5f; // 遮罩淡出时间
-    public float maskToBlackDuration = 0.5f; // 遮罩变黑时间
+    public float blinkDuration = 0.3f; // 闪烁动画时间
+    public float maskFadeDuration = 0.3f; // 遮罩淡出时间
+    public float maskToBlackDuration = 0.3f; // 遮罩变黑时间
 
     public GameObject videoScreen; // 视频屏幕对象
     private VideoPlayer videoPlayer; // 视频播放器组件
 
     private CanvasGroup loadingCanvasGroup;
+    private AudioSource backgroundMusicSource;
+    private AudioSource clickSoundSource;
 
     void Start()
     {
         // 获取 CanvasGroup 组件
         loadingCanvasGroup = loadingCanvas.GetComponent<CanvasGroup>();
+
+        // 获取 AudioSource 组件
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        if (audioSources.Length >= 2)
+        {
+            backgroundMusicSource = audioSources[0];
+            clickSoundSource = audioSources[1];
+        }
 
         // 确保加载图标初始状态可见
         loadingIcon.color = new Color(loadingIcon.color.r, loadingIcon.color.g, loadingIcon.color.b, 1);
@@ -39,14 +49,14 @@ public class StartGameScript : MonoBehaviour
         videoScreen.SetActive(false);
 
         // 播放开屏界面的背景音乐
-        if (AudioManager.instance != null)
+        if (backgroundMusicSource != null)
         {
             Debug.Log("Playing MainMenuBGM");
-            AudioManager.instance.Play("MainMenuBGM");
+            backgroundMusicSource.Play();
         }
         else
         {
-            Debug.LogWarning("AudioManager instance is null");
+            Debug.LogWarning("Background Music Source is null");
         }
 
         // 绑定开始按钮点击事件
@@ -71,25 +81,25 @@ public class StartGameScript : MonoBehaviour
         }
 
         // 播放开始游戏按钮点击音效
-        if (AudioManager.instance != null)
+        if (clickSoundSource != null)
         {
             Debug.Log("Playing StartGameClick");
-            AudioManager.instance.Play("StartGameClick");
+            clickSoundSource.Play();
         }
         else
         {
-            Debug.LogWarning("AudioManager instance is null");
+            Debug.LogWarning("Click Sound Source is null");
         }
 
         // 停止背景音乐
-        if (AudioManager.instance != null)
+        if (backgroundMusicSource != null)
         {
             Debug.Log("Stopping MainMenuBGM");
-            AudioManager.instance.Stop("MainMenuBGM");
+            backgroundMusicSource.Stop();
         }
         else
         {
-            Debug.LogWarning("AudioManager instance is null");
+            Debug.LogWarning("Background Music Source is null");
         }
 
         // 隐藏所有菜单元素
