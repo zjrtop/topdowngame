@@ -57,7 +57,7 @@ public class PlayerTeleport : MonoBehaviour
     {
         Vector3 destination = position;
 
-
+        Debug.Log(destination);
         if (rb != null)
         {
             rb.isKinematic = true;

@@ -54,7 +54,6 @@ public class PlayerStates : MonoBehaviour
             }
 
         }
-        detectTimes = 1;
     }
 
     public int GetDetectTimes() {

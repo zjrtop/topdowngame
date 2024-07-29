@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Minifantasy;
+using TMPro;
 using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
@@ -36,6 +37,16 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.Play(deathAnim, 0, 1.0f);
         }
+
+        // 
+        List<GameObject> enemies = FindGameObjectsWithTagIncludingInactive("Item");
+        Debug.Log("找到 " + enemies.Count + " 个带标签 'Enemy' 的游戏对象（包括非活动状态）。");
+
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.SetActive(true);
+        }
+
     }
 
     public void SetAnimationRate(string clipName, int sampleRate){
@@ -56,6 +67,24 @@ public class PlayerAnimation : MonoBehaviour
         {
             Debug.LogWarning("Animator or clipName is not set");
         }
+
+    }
+
+    List<GameObject> FindGameObjectsWithTagIncludingInactive(string tag)
+    {
+        List<GameObject> results = new List<GameObject>();
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+
+        foreach (GameObject obj in allObjects)
+        {
+            // Filter out assets and prefabs
+            if (obj.hideFlags == HideFlags.None && obj.CompareTag(tag))
+            {
+                results.Add(obj);
+            }
+        }
+
+        return results;
     }
 
 

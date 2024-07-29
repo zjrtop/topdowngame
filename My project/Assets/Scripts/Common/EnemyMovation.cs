@@ -70,7 +70,9 @@ public class EnemyMovation : MonoBehaviour
                 {
                     parentAnimtionCtl.PlayerDeath();
                 }
+
                 Debug.Log("Player death");
+
                 PlayerTeleport playerTeleport = colliderObj.GetComponentInParent<PlayerTeleport>();
                 if (playerTeleport != null)
                 {
