@@ -9,11 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Level/MainMenu.unity
     guid: 23f7281bb7f2dd04c98a4f5fb89ec7fd
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 1
     path: Assets/Scenes/Level/HouseScene1.unity
     guid: 023f3dfe7ae869a488b08af9504fbc13
+  - enabled: 1
+    path: Assets/Scenes/Level/Forest.unity
+    guid: b69da13b7cef2894da45ccee63fe7c42
+  - enabled: 1
+    path: Assets/Scenes/Level/HouseScene2.unity
+    guid: 5fc57d4ab5202314186a679927e08e8e
+  - enabled: 1
+    path: Assets/Scenes/Level/HouseScene3.unity
+    guid: 4aa0e9c0c696cab48be1ad5ab5f3d1eb
+  - enabled: 1
+    path: Assets/Scenes/Level/HouseScene4.unity
+    guid: 686bc6666dd708b4c8c84349e651caaa
+  - enabled: 1
+    path: Assets/Scenes/Level/EndScene.unity
+    guid: 9b1b902dea21e46ed9bfcc007148ce2f
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 67a224d4821ffe746af57d18b7e463e8, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 1d0f13e0088beef4dab579b0c956f22c, type: 2}
