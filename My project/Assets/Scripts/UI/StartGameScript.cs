@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using DG.Tweening;
 using System.Collections;
 using UnityEngine.Video;
 
@@ -9,12 +8,12 @@ public class StartGameScript : MonoBehaviour
 {
     public Image loadingIcon; // 加载图标
     public GameObject loadingCanvas; // 加载画布
-    public Image loadingMask; // 加载遮罩
+    public CanvasGroup loadingMask; // 加载遮罩
     public Button startButton; // 开始按钮
     public GameObject menuElements; // 包含所有菜单元素的父对象
     public float blinkDuration = 0.5f; // 闪烁动画时间
-    public float maskFadeDuration = 1f; // 遮罩淡出时间
-    public float maskToBlackDuration = 1f; // 遮罩变黑时间
+    public float maskFadeDuration = 0.5f; // 遮罩淡出时间
+    public float maskToBlackDuration = 0.5f; // 遮罩变黑时间
 
     public GameObject videoScreen; // 视频屏幕对象
     private VideoPlayer videoPlayer; // 视频播放器组件
@@ -34,7 +33,7 @@ public class StartGameScript : MonoBehaviour
         loadingCanvas.SetActive(false);
 
         // 确保遮罩初始状态为透明
-        loadingMask.color = new Color(loadingMask.color.r, loadingMask.color.g, loadingMask.color.b, 0);
+        loadingMask.alpha = 0;
 
         // 隐藏视频屏幕
         videoScreen.SetActive(false);
@@ -123,16 +122,16 @@ public class StartGameScript : MonoBehaviour
         loadingCanvas.SetActive(true);
 
         // 开始加载图标闪烁动画
-        loadingIcon.DOFade(0f, blinkDuration).SetLoops(-1, LoopType.Yoyo);
+        StartCoroutine(BlinkLoadingIcon());
 
         // 开始遮罩从透明变黑
         Debug.Log("Starting mask fade to black");
-        loadingMask.DOFade(1f, maskToBlackDuration).OnComplete(() =>
+        StartCoroutine(FadeCanvasGroup(loadingMask, 0, 1, maskToBlackDuration, () =>
         {
             Debug.Log("Mask is now black, starting scene load");
             // 完全变黑后开始加载新场景
-            StartCoroutine(LoadSceneCoroutine("HouseScene"));
-        });
+            StartCoroutine(LoadSceneCoroutine("HouseScene1"));
+        }));
     }
 
     IEnumerator LoadSceneCoroutine(string sceneName)
@@ -145,10 +144,34 @@ public class StartGameScript : MonoBehaviour
 
         // 完成加载后开始淡出遮罩
         Debug.Log("Starting mask fade to transparent");
-        loadingMask.DOFade(0f, maskFadeDuration).OnComplete(() =>
+        StartCoroutine(FadeCanvasGroup(loadingMask, 1, 0, maskFadeDuration, () =>
         {
             Debug.Log("Mask is now transparent, activating scene");
             asyncOperation.allowSceneActivation = true;
-        });
+        }));
+    }
+
+    IEnumerator BlinkLoadingIcon()
+    {
+        while (true)
+        {
+            loadingIcon.CrossFadeAlpha(0f, blinkDuration, true);
+            yield return new WaitForSeconds(blinkDuration);
+            loadingIcon.CrossFadeAlpha(1f, blinkDuration, true);
+            yield return new WaitForSeconds(blinkDuration);
+        }
+    }
+
+    IEnumerator FadeCanvasGroup(CanvasGroup canvasGroup, float startAlpha, float endAlpha, float duration, System.Action onComplete)
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < duration)
+        {
+            canvasGroup.alpha = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        canvasGroup.alpha = endAlpha;
+        onComplete?.Invoke();
     }
 }
