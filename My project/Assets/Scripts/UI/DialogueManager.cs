@@ -46,6 +46,7 @@ public class DialogueManager : MonoBehaviour
         {
             // 对话结束，执行关闭对话框的逻辑
             Debug.Log("End of dialogue");
+            //transform.parent.gameObject.SetActive(false); // 关闭对话框
             transform.gameObject.SetActive(false); 
             isDialogueCompleted = true; // 标记对话完成
         }

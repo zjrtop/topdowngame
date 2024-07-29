@@ -38,39 +38,21 @@ public class EnemyMovation : MonoBehaviour
 
 
             rb2d.velocity = new Vector2(moveVector.x, moveVector.y);
-            // int faceDir = (int)transform.localScale.x;
-            // if (sumVelocity != 0)
-            // {
-
-            //     if (moveDirection.x > 0)
-            //     {
-            //         faceDir = 1;
-            //     }
-            //     if (moveDirection.x < 0)
-            //     {
-            //         faceDir = -1;
-            //     }
-            //     transform.localScale = new Vector3(faceDir, 1, 1);
-
-
-            // }
-        }else{
-            //触发死亡
-             PlayerStates playerStates = colliderObj.GetComponentInParent<PlayerStates>();
-            PlayerAnimation parentAnimtionCtl = colliderObj.GetComponentInParent<PlayerAnimation>();
-            int sheild = playerStates.GetDetectTimes();
-            if(sheild == 1)
+            int faceDir = (int)transform.localScale.x;
+            if (sumVelocity != 0)
             {
-                playerStates.DecreaseShield();
-                Debug.Log("Sheild Consumer");
-            }
-            else
-            {
-                if (parentAnimtionCtl)
+
+                if (moveDirection.x > 0)
                 {
-                    parentAnimtionCtl.PlayerDeath();
+                    faceDir = 1;
                 }
-                Debug.Log("Player death");
+                if (moveDirection.x < 0)
+                {
+                    faceDir = -1;
+                }
+                transform.localScale = new Vector3(faceDir, 1, 1);
+
+
             }
         }
     }

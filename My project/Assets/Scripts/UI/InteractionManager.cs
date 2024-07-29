@@ -10,7 +10,6 @@ public class InteractionManager : MonoBehaviour
         public GameObject panel; // 面板对象
         public ProximityTrigger proximityTrigger; // 触发器脚本
         public bool requiresDialogueCompletion;  // 需要完成对话
-        public bool hasBeenOpened; // 记录面板是否已经被打开
     }
 
     public InteractionData[] interactions; // 用于存储交互数据的数组
@@ -26,23 +25,16 @@ public class InteractionManager : MonoBehaviour
             {
                 // Debug 日志，检查是否需要完成对话
                 Debug.Log($"Checking interaction with panel: {interaction.panel.name}");
-
+                
                 if (interaction.requiresDialogueCompletion && !npcADialogueManager.isDialogueCompleted)
                 {
                     Debug.Log("Dialogue with NPC A is not completed yet!");
                     return;
                 }
 
-                if (interaction.hasBeenOpened)
-                {
-                    Debug.Log($"Panel {interaction.panel.name} has already been opened once!");
-                    return;
-                }
-
                 // 如果玩家在附近且对话完成，显示相应的设置对话框
                 Debug.Log($"Opening panel: {interaction.panel.name}");
                 interaction.panel.SetActive(true);
-                interaction.hasBeenOpened = true; // 更新面板状态为已打开
                 StartCoroutine(VerifyPanelActive(interaction.panel)); // 验证面板在下一帧是否仍为激活状态
                 return; // 一旦找到一个面板打开即可返回
             }
@@ -65,12 +57,5 @@ public class InteractionManager : MonoBehaviour
             interaction.panel.SetActive(false);
         }
         Debug.Log("All dialogs closed!");
-    }
-
-    // 通用关闭面板的方法
-    public void ClosePanel(GameObject panel)
-    {
-        Debug.Log($"Closing panel: {panel.name}");
-        panel.SetActive(false);
     }
 }

@@ -7,7 +7,6 @@ TagManager:
   - Item
   - enemy
   - humanbody
-  - maskview
   layers:
   - Default
   - TransparentFX

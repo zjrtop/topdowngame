@@ -5,7 +5,6 @@ using UnityEngine;
 public class ShieldItem : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Sprite sprite;
     void Start()
     {
 
@@ -19,7 +18,7 @@ public class ShieldItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-         GameObject colliderObj = other.gameObject;
+        GameObject colliderObj = other.gameObject;
         if (colliderObj.CompareTag("humanbody"))
         {
             // PlayerAnimation parentAnimtionCtl = colliderObj.GetComponentInParent<PlayerAnimation>();
@@ -27,11 +26,15 @@ public class ShieldItem : MonoBehaviour
             // {
             //     parentAnimtionCtl.PlayerDeath();
             // }
-            ShieldAction shieldAction = colliderObj.AddComponent<ShieldAction>();
-            shieldAction.sprite = sprite;
-            shieldAction.StartAction();
-            Debug.Log("player get dash item " + other.gameObject.name);
-            gameObject.SetActive(false);
+            PlayerStates playerStates = colliderObj.GetComponentInParent<PlayerStates>();
+
+            if (playerStates != null) {
+                playerStates.IncrementShield();
+
+            }
+            Debug.Log("player get shield item " + other.gameObject.name);
+
+
         }
 
 

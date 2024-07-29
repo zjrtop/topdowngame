@@ -28,7 +28,6 @@ public class DashItem : MonoBehaviour
             DashAction dashAction = colliderObj.AddComponent<DashAction>();
             dashAction.StartAction();
             Debug.Log("player get dash item " + other.gameObject.name);
-            gameObject.SetActive(false);
         }
        
 
