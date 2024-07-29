@@ -13,19 +13,42 @@ public class PlayerTeleport : MonoBehaviour
 
     void Start()
     {
-        progress = GameInstance.Instance.progress;
-        if (progress == 0)
+        int defaultValue = 1; // 如果键不存在，则返回默认值
+        progress = PlayerPrefs.GetInt("myIntKey", defaultValue);
+
+        PlayerStates playerStates = GetComponent<PlayerStates>();
+
+        playerStates.progress = progress;
+
+
+
+        Debug.Log(progress);
+        if (progress == 1)
         {
-            position = new Vector3();
+            GameObject point = GameObject.FindWithTag("bornpoint1");
+            if (point != null)
+            {
+                position = point.transform.position;
+            }
         }
-        else if (progress == 1)
+        else if (progress == 2)
         {
-            position = new Vector3();
+            GameObject point = GameObject.FindWithTag("bornpoint2");
+            if (point != null)
+            {
+                position = point.transform.position;
+            }
         }
-        else if (progress == 2) {
-            position = new Vector3();
+        else if (progress == 3)
+        {
+            GameObject point = GameObject.FindWithTag("bornpoint2");
+            if (point != null)
+            {
+                position = point.transform.position;
+            }
         }
-        rb = GetComponent<Rigidbody2D>();
+            rb = GetComponent<Rigidbody2D>();
+        Teleport();
     }
 
     public void Teleport()

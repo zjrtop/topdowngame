@@ -10,7 +10,7 @@ public class GameInstance : MonoBehaviour
     //要保存使用的数据;
     public int item;
 
-    public int progress = 0;
+    public int progress = 1;
     //初始化
     private void Awake()
     {
