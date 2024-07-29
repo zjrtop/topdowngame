@@ -6843,7 +6843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308fe96eacdaa8a42af708a98d369974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progress: 3
+  progress: 1
 --- !u!4 &558411101
 Transform:
   m_ObjectHideFlags: 0
