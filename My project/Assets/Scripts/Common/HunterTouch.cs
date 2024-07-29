@@ -10,8 +10,9 @@ public class HunterTouch : MonoBehaviour
     public string key2 = "buttonClickStatus";
 
     // 目标场景名称
-    public string scene1 = "HouseScene2";
-    public string scene2 = "HouseScene3";
+    public string scene1 = "HouseScene1";
+    public string scene2 = "HouseScene2";
+    public string scene3 = "HouseScene3";
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,9 +26,13 @@ public class HunterTouch : MonoBehaviour
             // 检查两个值是否都为2
             if (value1 == 2 && value2 == 2)
             {
+                SceneManager.LoadScene(scene3);
+            }
+            else if (value1 == 2)
+            {
                 SceneManager.LoadScene(scene2);
             }
-            else
+            else if (value1 == 1)
             {
                 SceneManager.LoadScene(scene1);
             }

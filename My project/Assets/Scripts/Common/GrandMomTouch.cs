@@ -10,8 +10,10 @@ public class GrandMomTouch : MonoBehaviour
     public string key2 = "buttonClickStatus";
 
     // 目标场景名称
-    public string scene1 = "HouseScene3";
-    public string scene2 = "HouseScene4";
+    public string scene1 = "HouseScene1";
+    public string scene2 = "HouseScene2";
+    public string scene3 = "HouseScene3";
+    public string scene4 = "HouseScene4";
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,12 +24,20 @@ public class GrandMomTouch : MonoBehaviour
             int value1 = PlayerPrefs.GetInt(key1, 0);
             int value2 = PlayerPrefs.GetInt(key2, 0);
 
-            // 检查两个值是否都为3
+            // 检查值并加载相应的场景
             if (value1 == 3 && value2 == 3)
+            {
+                SceneManager.LoadScene(scene4);
+            }
+            else if (value1 == 3)
+            {
+                SceneManager.LoadScene(scene3);
+            }
+            else if (value1 == 2)
             {
                 SceneManager.LoadScene(scene2);
             }
-            else
+            else if (value1 == 1)
             {
                 SceneManager.LoadScene(scene1);
             }
