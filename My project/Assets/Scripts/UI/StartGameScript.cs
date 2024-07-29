@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using System.Collections;
+using UnityEngine.Video;
 
 public class StartGameScript : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class StartGameScript : MonoBehaviour
     public GameObject menuElements; // 包含所有菜单元素的父对象
     public float blinkDuration = 0.5f; // 闪烁动画时间
     public float maskFadeDuration = 1f; // 遮罩淡出时间
+
+    public GameObject videoScreen; // 视频屏幕对象
+    private VideoPlayer videoPlayer; // 视频播放器组件
 
     private CanvasGroup loadingPanelCanvasGroup;
 
@@ -29,17 +33,26 @@ public class StartGameScript : MonoBehaviour
         loadingPanel.SetActive(false);
         loadingMask.color = new Color(loadingMask.color.r, loadingMask.color.g, loadingMask.color.b, 1);
 
+        // 隐藏视频屏幕
+        videoScreen.SetActive(false);
+
         // 播放开屏界面的背景音乐
         AudioManager.instance.Play("MainMenuBGM");
 
         // 绑定开始按钮点击事件
         startButton.onClick.AddListener(OnStartButtonClicked);
+
+        // 获取 VideoPlayer 组件
+        videoPlayer = videoScreen.GetComponent<VideoPlayer>();
+
+        // 注册视频播放完成事件
+        videoPlayer.loopPointReached += OnVideoFinished;
     }
 
     void OnStartButtonClicked()
     {
         // 确保所有对象有效
-        if (menuElements == null || loadingPanel == null || loadingIcon == null || loadingMask == null || loadingPanelCanvasGroup == null)
+        if (menuElements == null || loadingPanel == null || loadingIcon == null || loadingMask == null || loadingPanelCanvasGroup == null || videoPlayer == null || videoScreen == null)
         {
             Debug.LogError("One or more required components are not assigned or are missing.");
             return;
@@ -66,12 +79,28 @@ public class StartGameScript : MonoBehaviour
             // 停止加载图标的闪烁动画
             loadingIcon.DOKill();
 
-            // 加载新场景
-            StartCoroutine(LoadSceneCoroutine("HouseScene")); // 确保这里的名称与构建设置中的场景名称一致
+            // 开始播放视频
+            PlayIntroVideo();
         });
 
         // 同时淡出整个加载面板
         DOTween.To(() => loadingPanelCanvasGroup.alpha, x => loadingPanelCanvasGroup.alpha = x, 0f, maskFadeDuration);
+    }
+
+    void PlayIntroVideo()
+    {
+        // 显示视频屏幕
+        videoScreen.SetActive(true);
+        // 播放视频
+        videoPlayer.Play();
+    }
+
+    void OnVideoFinished(VideoPlayer vp)
+    {
+        // 隐藏视频屏幕
+        videoScreen.SetActive(false);
+        // 加载游戏场景
+        StartCoroutine(LoadSceneCoroutine("HouseScene"));
     }
 
     IEnumerator LoadSceneCoroutine(string sceneName)
