@@ -32,10 +32,12 @@ public class JoyContainer : MonoBehaviour, IDragHandler, IPointerUpHandler, IPoi
         position.x = (position.x / jsContainer.rectTransform.sizeDelta.x);
         position.y = (position.y / jsContainer.rectTransform.sizeDelta.y);
 
-        float x = (jsContainer.rectTransform.pivot.x == 1f) ? position.x * 2 + 1 : position.x * 2 - 1;
-        float y = (jsContainer.rectTransform.pivot.y == 1f) ? position.y * 2 + 1 : position.y * 2 - 1;
+        //float x = (jsContainer.rectTransform.pivot.x == 1f) ? position.x * 2 + 1 : position.x * 2 - 1;
+        //float y = (jsContainer.rectTransform.pivot.y == 1f) ? position.y * 2 + 1 : position.y * 2 - 1;
 
-        InputDirection = new Vector3(x, y, 0);
+
+        InputDirection = new Vector3(position.x, position.y, 0);
+        //InputDirection = new Vector3(x, y, 0);
         InputDirection = (InputDirection.magnitude > 1) ? InputDirection.normalized : InputDirection;
 
         //限定Joystick能移动的区域

@@ -66,7 +66,7 @@ public class MovationTouch : MonoBehaviour
             Vector2 direct2d = new Vector2(direction.x, direction.y); 
             float angle = CalculateClockwiseAngle(direct2d);
             if (angle>=45.0f && angle < 135.0f){        // 上
-                face_dir = 3;
+                face_dir = 4;
             }else if (angle >= 135.0f && angle < 225.0f){    //左
                 face_dir = 2;
             }else if(angle >= 225.0f && angle < 315.0f){      //下
@@ -85,6 +85,8 @@ public class MovationTouch : MonoBehaviour
             // }
             // spriteRender.flipX = bIsFlip;
             //transform.position = new Vector3(Mathf.Clamp(transform.position.x, xMin, xMax), Mathf.Clamp(transform.position.y, yMin, yMax), 0f);//to restric movement of player
+        }else{
+            face_dir = 0;
         }
     }
 
