@@ -8,7 +8,7 @@ public class PlayerStates : MonoBehaviour
 
     public bool bIsTalkWithMerchant = false;
 
-    public int item = -1;
+    public int progress = 0;
 
 
 
@@ -27,6 +27,6 @@ public class PlayerStates : MonoBehaviour
 
     public void SaveData()
     {
-        GameInstance.Instance.item = item;
+        GameInstance.Instance.item = progress;
     }
 }

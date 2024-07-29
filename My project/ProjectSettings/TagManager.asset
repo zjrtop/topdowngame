@@ -8,6 +8,7 @@ TagManager:
   - enemy
   - humanbody
   - maskview
+  - bornpoint1
   layers:
   - Default
   - TransparentFX
