@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -260,6 +259,65 @@ Transform:
   m_GameObject: {fileID: 502022492}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &518299390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 518299392}
+  - component: {fileID: 518299391}
+  m_Layer: 0
+  m_Name: AudioCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &518299391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518299390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76032c312aec7a4d9470c1d643c9ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioTypes:
+  - Source: {fileID: 0}
+    Clip: {fileID: 8300000, guid: eb6d0f247ec6b49fd9b74db6b50ff253, type: 3}
+    Group: {fileID: 0}
+    Name: MainMenuBGM
+    Volume: 1
+    Pitch: 1
+    Loop: 1
+  - Source: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 82e0d65b9ee1343fa954cd2fb770ce4e, type: 3}
+    Group: {fileID: 0}
+    Name: StartgameClick
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+--- !u!4 &518299392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518299390}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1200,7 +1258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1052, y: -373}
+  m_AnchoredPosition: {x: 1072, y: -407}
   m_SizeDelta: {x: 120, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731420209
@@ -1358,65 +1416,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1990633405
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1990633407}
-  - component: {fileID: 1990633406}
-  m_Layer: 0
-  m_Name: AudioCanvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1990633406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990633405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d76032c312aec7a4d9470c1d643c9ccb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AudioTypes:
-  - Source: {fileID: 0}
-    Clip: {fileID: 8300000, guid: eb6d0f247ec6b49fd9b74db6b50ff253, type: 3}
-    Group: {fileID: 0}
-    Name: MainMenuBGM
-    Volume: 1
-    Pitch: 1
-    Loop: 1
-  - Source: {fileID: 0}
-    Clip: {fileID: 8300000, guid: 82e0d65b9ee1343fa954cd2fb770ce4e, type: 3}
-    Group: {fileID: 0}
-    Name: StartGameClick
-    Volume: 1
-    Pitch: 1
-    Loop: 0
---- !u!4 &1990633407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990633405}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1193326, y: 0.18290249, z: 2504.1724}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2072495720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,4 +1737,4 @@ SceneRoots:
   - {fileID: 502022495}
   - {fileID: 983742226}
   - {fileID: 7210696165959317589}
-  - {fileID: 1990633407}
+  - {fileID: 518299392}
