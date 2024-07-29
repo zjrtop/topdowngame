@@ -14,18 +14,22 @@ public class PlayerTeleport : MonoBehaviour
 
     void Start()
     {
-        int defaultValue = 1; // 如果键不存在，则返回默认值
+        int defaultValue = 2; // 如果键不存在，则返回默认值
 
-        progress = PlayerPrefs.GetInt("myIntKey", defaultValue);
+        //progress = PlayerPrefs.GetInt("myIntKey", defaultValue);
+        progress = GameGlobal.Instance.progress;
 
+        int randomPos = Random.Range(1, 4); // 在此，upper bound是非包含的
         PlayerStates playerStates = GetComponent<PlayerStates>();
 
-        playerStates.progress = progress;
+        Debug.Log("PROGRESS EQUALS " + progress.ToString());
+
+        playerStates.progress = PlayerPrefs.GetInt("myIntKey", defaultValue); ;
 
 
 
         Debug.Log(progress);
-        if (progress == 1)
+        if (randomPos == 1)
         {
             GameObject point = GameObject.FindWithTag("bornpoint1");
             if (point != null)
@@ -33,7 +37,7 @@ public class PlayerTeleport : MonoBehaviour
                 position = point.transform.position;
             }
         }
-        else if (progress == 2)
+        else if (randomPos == 2)
         {
             GameObject point = GameObject.FindWithTag("bornpoint2");
             if (point != null)
@@ -41,16 +45,16 @@ public class PlayerTeleport : MonoBehaviour
                 position = point.transform.position;
             }
         }
-        else if (progress == 3)
+        else if (randomPos == 3)
         {
-            GameObject point = GameObject.FindWithTag("bornpoint2");
+            GameObject point = GameObject.FindWithTag("bornpoint3");
             if (point != null)
             {
                 position = point.transform.position;
             }
         }
             rb = GetComponent<Rigidbody2D>();
-        Teleport();
+            Teleport();
     }
 
     public void Teleport()

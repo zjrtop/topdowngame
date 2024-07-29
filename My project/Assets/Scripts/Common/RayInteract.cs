@@ -69,8 +69,6 @@ public class RayInteract : MonoBehaviour
                     {
                         parentAnimtionCtl.PlayerDeath();
                     }
-
-
                     Debug.Log("Player death");
                     PlayerTeleport playerTeleport = colliderObj.GetComponentInParent<PlayerTeleport>();
                     if (playerTeleport != null) {

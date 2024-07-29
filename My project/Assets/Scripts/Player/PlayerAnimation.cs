@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Minifantasy;
 using TMPro;
 using UnityEngine;
@@ -37,6 +38,33 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.Play(deathAnim, 0, 1.0f);
         }
+
+        //
+        Transform childTransform = transform.Find("BodyInteract");
+
+        GameObject obj = childTransform.gameObject;
+
+        DashAction action = obj.GetComponent<DashAction>(); 
+        if (action != null)
+        {
+            action.StopAction();
+            Destroy(action);
+        }
+
+        ViewAction viewAction = obj.GetComponent<ViewAction>();
+        if (viewAction != null)
+        {
+            viewAction.StopAction();
+            Destroy(viewAction);
+        }
+
+        ShieldAction shieldAction = obj.GetComponent<ShieldAction>();
+        if (shieldAction != null)
+        {
+            shieldAction.StopAction();
+            Destroy(shieldAction);
+        }
+
 
         // 
         List<GameObject> enemies = FindGameObjectsWithTagIncludingInactive("Item");

@@ -32,12 +32,23 @@ public class ViewItem : MonoBehaviour
             // {
             //     parentAnimtionCtl.PlayerDeath();
             // }
-            ViewAction viewAction = colliderObj.AddComponent<ViewAction>();
-            viewAction.originView = originView;
-            viewAction.NewView = NewView;
-            viewAction.StartAction();
-            Debug.Log("player get dash item " + other.gameObject.name);
-            gameObject.SetActive(false);
+
+            ViewAction viewAction = colliderObj.GetComponent<ViewAction>();
+            if (viewAction != null) {
+                viewAction.Refresh();
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                viewAction = colliderObj.AddComponent<ViewAction>();
+                viewAction.originView = originView;
+                viewAction.NewView = NewView;
+                viewAction.StartAction();
+                Debug.Log("player get dash item " + other.gameObject.name);
+                gameObject.SetActive(false);
+            }
+
+
         }
        
 
